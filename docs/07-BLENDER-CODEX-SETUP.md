@@ -20,6 +20,29 @@ That branch is the technical MCP implementation source. This repository remains 
 - ChatGPT auth configured.
 - Current working model: `gpt-5.6-sol`.
 
+## Windows Codex PATH note
+
+On the current Windows machine Codex is installed through npm at:
+
+```text
+C:\Users\temp123\AppData\Roaming\npm\codex.cmd
+```
+
+A temporary `$env:Path += ...` change only survives the current PowerShell session. If a new PowerShell window reports that `codex.cmd` is not recognized, either launch Codex with the full path:
+
+```powershell
+& "C:\Users\temp123\AppData\Roaming\npm\codex.cmd" -m gpt-5.6-sol
+```
+
+or add the npm global directory for the current session:
+
+```powershell
+$env:Path += ";C:\Users\temp123\AppData\Roaming\npm"
+codex.cmd --version
+```
+
+After the LAB is validated, the npm directory can be added permanently to the user PATH. Prefer `codex.cmd` on Windows while diagnosing to avoid PowerShell execution-policy issues with `codex.ps1`.
+
 ## Clone Blender MCP LAB
 
 ```powershell
@@ -49,6 +72,8 @@ $env:BLENDER_MCP_SAFE_MODE="1"
 ```
 
 ## Register MCP in Codex
+
+If `codex` is not on PATH, use the full `codex.cmd` path shown above for these commands too.
 
 ```powershell
 codex mcp add blender-astra-lab --env BLENDER_MCP_SAFE_MODE=1 -- uv --directory "$HOME\Documents\blender-mcp-astra-lab" run blender-mcp
