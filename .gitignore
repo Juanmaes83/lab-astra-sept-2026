@@ -1,0 +1,41 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+.npm/
+
+# Codex / local agent state
+.codex/
+
+# Blender temp / backup
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+
+# Render / cache outputs
+cache/
+tmp/
+temp/
+render-cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
