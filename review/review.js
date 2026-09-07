@@ -4,6 +4,7 @@ for(const [label,factor] of [['Zoom in',.8],['Zoom out',1.25]]){const button=doc
 const cameraReadout=document.createElement('p');cameraReadout.id='camera-readout';cameraReadout.className='hint';model.after(cameraReadout);
 model.addEventListener('camera-change',()=>{const o=model.getCameraOrbit();cameraReadout.textContent=`Camera: ${(o.theta*180/Math.PI).toFixed(1)}° azimuth · ${(o.phi*180/Math.PI).toFixed(1)}° elevation angle · ${o.radius.toFixed(2)} m distance`;});
 model.addEventListener('load',()=>document.querySelector('#model-status').textContent='Actual GLB loaded — ready for inspection');
+customElements.whenDefined('model-viewer').then(()=>{if(model.loaded)document.querySelector('#model-status').textContent='Actual GLB loaded — ready for inspection';});
 model.addEventListener('error',()=>document.querySelector('#model-status').textContent='GLB failed to load. Check the download and network connection.');
 document.querySelector('#reset').onclick=()=>{model.cameraOrbit='35deg 45deg 65m';model.cameraTarget='auto auto auto';model.fieldOfView='auto';model.jumpCameraToGoal();};
 document.querySelector('#large').onclick=()=>{const active=document.querySelector('#inspection').classList.toggle('expanded');document.querySelector('#large').textContent=active?'Close large view':'Large view';};
