@@ -1,65 +1,86 @@
 # 01 — Current State
 
-Date: 2026-09-04
+Date: 2026-09-07
 
 ## Environment verified
 
 - Windows 11 Pro / x64.
-- Node `v24.14.1`.
-- npm `11.14.1`.
-- Codex CLI `0.153.2`.
-- Codex Doctor: healthy overall; 0 failures.
+- Node / npm available.
+- Codex CLI installed and healthy.
 - Codex auth mode: ChatGPT.
-- Working configured model: `gpt-5.6-sol`.
-- MCP servers already detected by Codex; one unrelated Cloudflare MCP may require login/disable cleanup.
+- `gpt-6-astra` now launches successfully in Codex CLI on the project owner's machine.
+- One unrelated Cloudflare MCP may still require login/cleanup; it does not block Blender MCP work.
 
 ## Astra access verification
 
-### Direct OpenAI API
-Observed result for `gpt-6-astra`:
+Previous 2026-09-04 state was `Astra pending`.
+
+That state is now obsolete.
+
+Observed on 2026-09-07:
 
 ```text
-404 model_not_found
+codex -m gpt-6-astra
 ```
 
-Interpretation: current API project is not provisioned for Astra yet.
+launches a Codex session whose UI reports `gpt-6-astra` as the active model.
 
-### Codex with ChatGPT authentication
-Launching Codex with `-m gpt-6-astra` reaches the client UI, but real inference returns:
+### Decision
+
+Use Astra for the active LAB gate, while keeping orchestration/model selection configurable.
+
+No Blender/MCP architecture decision may depend on Astra being the only future model.
+
+## PROJECT-PELU relationship
+
+This repository is now formally the **Spatial Production LAB** for PROJECT-PELU F2.
 
 ```text
-400 invalid_request_error
-The 'gpt-6-astra' model is not supported when using Codex with a ChatGPT account.
+LAB
+Astra + Blender + MCP + QA
+        ↓
+ACCEPTED SPATIAL PACKAGE
+        ↓
+PROJECT-PELU
+SpatialAsset / ViewerAdapter / 360 fallback
 ```
 
-Interpretation: Astra is not currently usable in this Codex/ChatGPT route either.
-
-## Decision
-
-Do not spend more project time attempting to force rollout access.
-
-Proceed with `gpt-5.6-sol` and keep all orchestration/model selection configurable so Astra can later replace Sol without rebuilding the Blender/MCP/world pipeline.
+The repos remain separate.
 
 ## Blender MCP state
 
-Source LAB already prepared in:
+Source LAB:
 
 `Juanmaes83/blender-mcp` → branch `lab/astra-sept-2026`
 
-That branch is based on the September 2026 Blender MCP upstream line and includes the Safe Mode work.
+Branch existence has been re-confirmed from GitHub.
 
-Next integration gate:
+Current integration gate:
 
 ```text
-CODEX/SOL
+ASTRA
 → BLENDER MCP
 → BLENDER
 → READ SCENE
 → CAPTURE SCREENSHOT
-→ SMALL CHANGE
+→ SMALL BOUNDED CHANGE
 → CAPTURE / VERIFY
 ```
 
-## Media / benchmark references
+Gate evidence template:
 
-SOLACE / Thomas-Astra reference material belongs in this repository as benchmark evidence. Original binaries can be uploaded manually to avoid connector limitations, with a manifest committed alongside them.
+`evidence/gate-1/gate-1-result.md`
+
+## Active branch
+
+`feat/astra-blender-gate-1`
+
+## Next action on local Windows machine
+
+Follow `docs/07-BLENDER-CODEX-SETUP.md` and execute Gate 1A read-only first.
+
+SOLACE remains blocked until Gate 1A + Gate 1B are PASS with screenshot/scene evidence.
+
+## Benchmark references
+
+SOLACE / Thomas-Astra reference material remains the first architectural benchmark after Gate 1. Original binaries can be uploaded manually, with provenance/source manifests committed alongside them.
