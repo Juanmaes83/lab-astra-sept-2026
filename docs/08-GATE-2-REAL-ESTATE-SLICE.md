@@ -1,4 +1,4 @@
-# 08 — Gate 2 — Real-Estate Spatial Slice
+# 08 — Gate 2 — SOLACE Architectural Blockout
 
 **Status:** 🟡 PLANNED / NEXT
 **Date:** 2026-09-07
@@ -6,157 +6,256 @@
 
 ## Purpose
 
-Prove that the Astra → Blender MCP → QA loop can produce a small but real-estate-relevant spatial asset, not only a test cube.
+Prove that the Astra → Blender MCP → QA loop can interpret and reconstruct a non-trivial real-estate floor plan as a coherent 3D architectural blockout.
 
-Gate 2 deliberately stays smaller than SOLACE. It is a bounded vertical slice that validates architecture, dimensions, capture/verification, semantic naming, export and manifest discipline before using a complex reference set.
+Gate 2 is intentionally more demanding than a single-room shell. Gate 1 already proved reliable read → act → capture → verify control. Gate 2 must now prove spatial understanding on a real-estate reference with multiple rooms, circulation, courtyard, exterior areas and pool.
+
+## Authoritative visual reference
+
+Use this repository asset as the primary floor-plan reference:
+
+`references/solace/SOLACE-CONCEPT-01-FLOORPLAN.jpg`
+
+The image was supplied by the project owner as an existing SOLACE benchmark reference. Treat it as the visual authority for Gate 2 geometry. Do not invent dimensions or architectural relationships that are not legible or inferable from the reference. Where exact dimensions are unclear, record the uncertainty explicitly in the manifest rather than presenting estimates as verified facts.
+
+## Architectural identity visible in the reference
+
+The floor plan shows a single-level garden house organised around a large planted courtyard.
+
+Primary spatial organisation to preserve:
+
+- north/top arrival and ENTRY;
+- central open social zone: LIVING → DINING → KITCHEN;
+- COVERED OUTDOOR DINING opening toward the central courtyard;
+- large PLANTED COURTYARD as the main organising void;
+- west/left wing with OFFICE, FAMILY BATH, BEDROOM 02 and BEDROOM 03;
+- east/right wing with PANTRY, LAUNDRY, GUEST WC, PLANT / STORE, PRIMARY BATH, DRESSING and PRIMARY BEDROOM;
+- exterior PRIVATE GARDEN / OPEN LAWN / SUN TERRACE;
+- LAP POOL positioned south/below the house;
+- major openings, doors and circulation must preserve the reference logic.
+
+Visible global/reference dimensions include approximately 25.40 m overall width and 17.00 m overall depth. Use only dimensions clearly visible in the source as authoritative. The pool is labelled approximately 10.0 × 3.5 m. Other room labels/dimensions should be read from the image when legible and recorded with confidence/provenance.
 
 ## Target artifact
 
-A simple architectural room shell / living-space blockout with:
+Gate 2 must create a recognisable SOLACE architectural blockout, not a decorative archviz scene.
 
-- floor;
-- four enclosing walls with one intentional opening;
-- ceiling height defined;
-- one doorway or wide opening;
-- one camera/viewpoint;
-- stable semantic names;
-- metric dimensions;
-- no decorative complexity required.
+Minimum required geometry:
 
-Suggested default geometry for the proof unless the human chooses another bounded size:
+- overall house footprint;
+- west wing;
+- east wing;
+- central living/dining/kitchen zone;
+- planted courtyard void;
+- covered outdoor dining zone;
+- entry;
+- office;
+- bedrooms 02 and 03;
+- primary bedroom suite zone;
+- principal bathrooms/service rooms as simplified enclosed spaces;
+- main internal/external circulation openings;
+- simplified terrace/garden boundaries where needed for spatial reading;
+- lap pool as a correctly positioned simple volume;
+- one fixed top-review camera;
+- one fixed perspective-review camera.
 
-```text
-ROOM width: 6.0 m
-ROOM depth: 4.0 m
-WALL height: 2.7 m
-WALL thickness: 0.15 m
-OPENING width: 1.2 m
-OPENING height: 2.1 m
-```
+## Not required in Gate 2
 
-These are test dimensions only, not claims about a real property.
+Do not spend the gate on decorative detail.
+
+Out of scope until the blockout passes:
+
+- detailed furniture;
+- final kitchen cabinetry;
+- final sanitaryware;
+- PBR materials;
+- photorealistic vegetation;
+- cinematic lighting;
+- premium archviz styling;
+- Unreal;
+- geospatial context.
+
+Simple placeholder furniture may be used only when it materially helps verify room function/scale, and must be semantically named as placeholder/reference geometry.
 
 ## Semantic naming
 
-Minimum object identity:
+Use stable semantic identifiers. Suggested pattern:
 
 ```text
-ROOM_FLOOR
-WALL_NORTH
-WALL_SOUTH
-WALL_EAST
-WALL_WEST
-OPENING_MAIN
-CAMERA_REVIEW
+SOLACE_SITE
+SOLACE_HOUSE
+SPACE_ENTRY
+SPACE_LIVING
+SPACE_DINING
+SPACE_KITCHEN
+SPACE_COVERED_OUTDOOR_DINING
+SPACE_PLANTED_COURTYARD
+SPACE_OFFICE
+SPACE_FAMILY_BATH
+SPACE_BEDROOM_02
+SPACE_BEDROOM_03
+SPACE_PANTRY
+SPACE_LAUNDRY
+SPACE_GUEST_WC
+SPACE_PLANT_STORE
+SPACE_PRIMARY_BATH
+SPACE_DRESSING
+SPACE_PRIMARY_BEDROOM
+SPACE_PRIVATE_GARDEN
+SPACE_OPEN_LAWN
+SPACE_SUN_TERRACE
+POOL_LAP
+CAMERA_TOP_REVIEW
+CAMERA_PERSPECTIVE_REVIEW
 ```
 
-If Blender construction uses boolean/helper objects, helpers must be clearly prefixed, e.g. `HELPER_...`.
+Walls/openings may use predictable prefixes such as `WALL_`, `OPENING_`, `DOOR_`, `WINDOW_`, `HELPER_`.
 
 ## Execution sequence
 
-### Gate 2A — Clean/versioned start
+### Gate 2A — Source inspection and plan interpretation
 
-1. close/discard the temporary Gate 1 scene or remove only `LAB_TEST_CUBE` in a controlled step;
-2. create a fresh scene for Gate 2;
-3. save a versioned LAB file only after the human approves the path/name;
-4. record Blender version and unit system.
+Before changing Blender:
 
-### Gate 2B — Architectural blockout
+1. read `AGENTS.md`, `docs/04-BENCHMARKS-AND-QA.md`, this document and the SOLACE reference image;
+2. inspect the image carefully before generating geometry;
+3. create/update `references/solace/source_manifest.json` or an equivalent Gate 2 source record;
+4. record visible dimensions, labels, adjacency and uncertain values;
+5. create a concise reconstruction plan;
+6. do not begin detailed modelling until the interpretation is internally consistent.
 
-1. create the floor and four walls;
-2. apply exact metric dimensions;
-3. create one doorway/opening;
-4. use semantic names;
-5. create one review camera;
-6. do not add furniture/material complexity yet.
+### Gate 2B — Clean/versioned Blender start
 
-### Gate 2C — Verify
+1. preserve or discard the Gate 1 temporary scene safely;
+2. create a fresh Gate 2 Blender scene;
+3. metric units, scale 1;
+4. no destructive overwrite of unrelated `.blend` files;
+5. save a versioned LAB `.blend` only after choosing an explicit Gate 2 path/name.
 
-Astra must inspect and report:
+### Gate 2C — Architectural blockout
 
-- object names;
-- positions;
-- scales;
-- dimensions;
-- wall height;
-- room width/depth;
-- opening size;
-- adjacency/coherence;
-- unexpected objects.
+Build the property in bounded passes:
 
-Then capture a fixed review viewport/camera image.
+1. global footprint and courtyard void;
+2. west and east wings;
+3. central living/dining/kitchen zone;
+4. room partitions and major openings;
+5. covered outdoor dining;
+6. exterior terrace/garden reading;
+7. lap pool;
+8. review cameras.
 
-### Gate 2D — Correct
+After each major pass: inspect → capture → compare → correct.
 
-If any metric or visual issue exists:
+### Gate 2D — Fixed-view QA
 
-1. identify the exact mismatch;
-2. change only the affected objects;
-3. recapture;
-4. remeasure;
-5. record before/after.
+At minimum capture:
 
-At least one explicit verification cycle is mandatory even if no correction is required.
+- a top/orthographic-like view that can be compared directly with the reference plan;
+- a perspective view that demonstrates the 3D volume and courtyard organisation.
 
-### Gate 2E — Export candidate
+A textual claim that the plan was reconstructed is not sufficient. The top view must be recognisably the same architectural layout even without room labels.
 
-1. export the accepted blockout as GLB;
-2. inspect export success;
-3. record file size;
-4. do not call it an `ACCEPTED SPATIAL PACKAGE` yet;
-5. create `scene_manifest.json` with object identity and dimensions.
+Verify:
+
+- overall proportions;
+- central courtyard placement/scale;
+- west/east wing relationships;
+- living/dining/kitchen sequence;
+- covered outdoor dining placement;
+- room adjacency;
+- openings/circulation;
+- primary suite position;
+- pool position and proportions;
+- no unrelated objects;
+- metric scale consistency.
+
+### Gate 2E — Correct
+
+For each mismatch:
+
+1. name the exact discrepancy;
+2. modify only affected objects;
+3. recapture the same fixed view;
+4. remeasure/recompare;
+5. record PASS/FAIL for that discrepancy.
+
+At least one explicit QA cycle is mandatory even if no correction is required.
+
+### Gate 2F — Export candidate
+
+Only after the blockout passes geometry QA:
+
+1. create `scene_manifest.json`;
+2. record semantic object identity and known/estimated dimensions;
+3. export candidate GLB;
+4. verify export success and file size;
+5. inspect the exported GLB if practical;
+6. do not call it an `ACCEPTED SPATIAL PACKAGE` until human review passes.
 
 ## Evidence
 
 Store under:
 
 ```text
-evidence/gate-2/
+evidence/gate-2-solace/
 ```
 
 Expected minimum:
 
 ```text
-00-before.png
-01-blockout.png
-02-verified.png
+00-reference-analysis.md
+01-top-blockout.png
+02-perspective-blockout.png
+03-top-verified.png
 scene_manifest.json
+source_manifest.json
+SOLACE_BLOCKOUT_v01.glb
 GATE-2-RESULT.md
 ```
 
-If a correction occurs, include the intermediate capture.
+If corrections occur, preserve intermediate captures.
 
 ## PASS criteria
 
-- [ ] Astra controls Blender through the same Safe Mode MCP path.
-- [ ] bounded room shell created.
-- [ ] metric dimensions verified.
-- [ ] semantic names stable.
-- [ ] no unrelated scene changes.
-- [ ] fixed visual evidence captured.
-- [ ] explicit verify/correct decision recorded.
+- [ ] Astra remains connected to Blender through the Safe Mode MCP path.
+- [ ] SOLACE reference image is actually inspected and recorded as source.
+- [ ] house footprint is recognisable from the source.
+- [ ] central planted courtyard is preserved as the main organising void.
+- [ ] west/east wings and central social zone preserve adjacency.
+- [ ] key rooms/zones are semantically named.
+- [ ] major openings/circulation are coherent.
+- [ ] pool placement/proportions are coherent with the reference.
+- [ ] metric scale is internally consistent.
+- [ ] fixed top-view comparison passes visual review.
+- [ ] perspective review demonstrates coherent 3D volume.
+- [ ] verify/correct loop is recorded.
 - [ ] GLB export succeeds.
-- [ ] `scene_manifest.json` exists and matches the scene.
-- [ ] human reviews the result.
+- [ ] manifests match the scene.
+- [ ] human review approves the blockout.
 
 ## FAIL conditions
 
-- geometry is visually plausible but dimensions are wrong;
-- object identity is unstable/random;
-- export cannot be reproduced;
-- unrelated objects are changed;
-- textual success is claimed without capture/measurement;
-- the test grows into SOLACE/full-property work before this gate closes.
+- generic house that does not resemble the SOLACE plan;
+- central courtyard is lost, enclosed or materially displaced;
+- rooms are plausible individually but adjacency is wrong;
+- dimensions/relationships are invented and presented as verified;
+- geometry is built without fixed-view comparison;
+- textual success is claimed without screenshots/measurements;
+- decorative work starts before architectural QA passes;
+- unrelated Blender content is changed;
+- export cannot be reproduced.
 
 ## After PASS
 
-Proceed to the SOLACE benchmark using the same discipline:
+Proceed to the next SOLACE refinement gate:
 
 ```text
-SOURCE MANIFEST
-→ SCENE MANIFEST
-→ BLOCKOUT
-→ VERIFY
-→ REFINE
-→ ACCEPTED GLB
+ACCEPTED BLOCKOUT
+→ openings/detail refinement
+→ living/dining/kitchen fidelity
+→ materials/light/camera
+→ cinematic walkthrough
+→ accepted GLB / spatial package
+→ PROJECT-PELU handoff
 ```
