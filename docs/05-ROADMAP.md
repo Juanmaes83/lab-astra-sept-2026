@@ -1,31 +1,46 @@
 # 05 — Roadmap
 
 ## Phase 0 — Environment ready
-Status: MOSTLY COMPLETE
+Status: ✅ CLOSED — 2026-09-07
 
-- OpenAI SDK installed.
-- API key validated.
-- Codex CLI installed.
-- Codex Doctor healthy.
-- Sol available.
-- Astra access tested and currently pending.
+- OpenAI/Codex environment ready.
+- Codex CLI installed and healthy.
+- ChatGPT auth configured.
+- `gpt-6-astra` now launches successfully in Codex CLI.
+- Model-swappable architecture retained.
 
-## Phase 1 — Blender MCP connection
-Goal: reliable local control.
+## Phase 1 — Blender MCP Gate 1
+Status: 🟡 IN PROGRESS
 
-1. clone/use `Juanmaes83/blender-mcp` September LAB;
+Goal: prove reliable local Astra → Blender control with evidence.
+
+1. use `Juanmaes83/blender-mcp` branch `lab/astra-sept-2026`;
 2. install/update Blender addon;
 3. enable Safe Mode;
-4. register the Blender MCP server in Codex;
-5. confirm `/mcp` health;
-6. read current Blender scene;
+4. register Blender MCP server in Codex;
+5. confirm MCP health;
+6. read current Blender scene without modifying it;
 7. capture viewport;
-8. create one bounded object;
-9. recapture and verify.
+8. create one bounded object/change only;
+9. recapture;
+10. verify identity + dimensions + visual result;
+11. save evidence and PASS/FAIL record.
 
-Completion condition: the full read → act → capture → verify loop works.
+Completion condition:
 
-## Phase 2 — SOLACE benchmark
+```text
+READ SCENE
++ SCREENSHOT
++ ONE CHANGE
++ SCREENSHOT
++ VERIFICATION
+= PASS
+```
+
+No SOLACE work before this gate passes.
+
+## Phase 2 — SOLACE architectural benchmark
+Status: ⚪ BLOCKED BY PHASE 1
 
 1. upload/reference original SOLACE media;
 2. create source manifest;
@@ -35,57 +50,47 @@ Completion condition: the full read → act → capture → verify loop works.
 6. detail living/dining/kitchen;
 7. camera/light/material pass;
 8. visual comparison loop;
-9. render 10–14 second walkthrough.
+9. render 10–14 second walkthrough;
+10. export accepted GLB + manifests for PROJECT-PELU handoff.
 
-Completion condition: recognizably coherent architectural slice with review evidence.
+Completion condition: recognizably coherent architectural slice with review evidence and an `ACCEPTED SPATIAL PACKAGE`.
 
-## Phase 3 — Geospatial proof
+## Phase 3 — PROJECT-PELU handoff proof
+Status: ⚪ NOT STARTED
 
-1. define bounded Torrevieja/Altea area;
-2. test `map3d` path;
-3. test Blosm path;
-4. test `3DTilesRendererJS` reference path;
-5. compare speed, editability, fidelity and exportability;
-6. define `geo_manifest.json`;
-7. choose primary owned-geometry path;
-8. build one recognizable geographic slice.
+1. package accepted GLB;
+2. include `source_manifest.json` and `scene_manifest.json`;
+3. include preview/camera metadata;
+4. transfer package to PROJECT-PELU F2 branch;
+5. verify the product consumes it without coupling to Blender;
+6. preserve F1 360 fallback.
 
-Completion condition: recognizable world base generated without manual city-by-city modeling.
+Completion condition: one LAB-produced spatial asset loads in PROJECT-PELU while F1 remains intact.
 
-## Phase 4 — Hero asset enrichment
+## Phase 4 — Geospatial proof
+Status: ⚪ DEFERRED
 
-1. identify identity-defining landmarks;
-2. collect permitted references;
-3. reconstruct/refine hero assets;
-4. proceduralize supporting fabric;
-5. visual QA against references.
+Torrevieja/Altea bounded proof using open/owned geodata. Do not start while architectural F2 gates remain open.
 
-## Phase 5 — Blender → Unreal
+## Phase 5 — Hero asset enrichment
+Status: ⚪ DEFERRED
 
-Blocked until the Blender pipeline is stable.
+## Phase 6 — Blender → Unreal
+Status: ⛔ BLOCKED
 
-1. define export contract from `scene_manifest.json`;
-2. preserve transforms/material identity/cameras;
-3. import/reconstruct in UE5;
-4. add collisions/navigation;
-5. compare equivalent cameras;
-6. package first walkable proof.
+Only after Blender control, QA and architectural handoff are stable.
 
-## Phase 6 — Persistence / orchestration upgrades
+## Phase 7 — Persistence / orchestration upgrades
+Status: ⚪ LATER
 
-Only after core proof:
-- Rome or similar persistent capability layer;
-- remote monitoring via iOS patterns;
-- Ableton/spatial audio;
-- larger-region streaming/runtime;
-- multi-agent orchestration.
+Rome/persistent capability, remote monitoring, spatial audio, region streaming and multi-agent orchestration only after the core proof.
 
 ## Anti-loop rule
-
-Do not spend days perfecting infrastructure before a visible output exists.
 
 At every phase ask:
 
 ```text
 What is the smallest real artifact that proves this capability?
 ```
+
+Do not spend days polishing infrastructure without reviewable output.
