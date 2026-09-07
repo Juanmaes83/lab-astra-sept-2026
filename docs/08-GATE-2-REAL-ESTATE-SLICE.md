@@ -14,7 +14,9 @@ Gate 2 is intentionally more demanding than a single-room shell. Gate 1 already 
 
 Use this repository asset as the primary floor-plan reference:
 
-`references/solace/SOLACE-CONCEPT-01-FLOORPLAN.jpg`
+`references/solace/HRUOGWHaMAATXEa.jpg`
+
+Validated locally: 680 × 661 pixels, JPEG decode and SOLACE visual identity PASS. The former `references/solace/SOLACE-CONCEPT-01-FLOORPLAN.jpg` is REJECTED/CORRUPT and retained only for provenance; do not use it.
 
 The image was supplied by the project owner as an existing SOLACE benchmark reference. Treat it as the visual authority for Gate 2 geometry. Do not invent dimensions or architectural relationships that are not legible or inferable from the reference. Where exact dimensions are unclear, record the uncertainty explicitly in the manifest rather than presenting estimates as verified facts.
 

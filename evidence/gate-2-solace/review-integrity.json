@@ -1,0 +1,152 @@
+{
+  "final_blend_read_check": {
+    "scene": "SOLACE_GATE_2",
+    "objects": 137,
+    "meshes": 135,
+    "cameras": 2,
+    "method": "Blender 5.2.1 background read of final v04 blend, no save"
+  },
+  "glb_bytes": 185324,
+  "inventory": [
+    {
+      "path": "evidence/gate-2-solace/00-macro-top.png",
+      "bytes": 1334185,
+      "sha256": "bad4c851abb5b2fdf08e23d3427de2e8fbba95b05b393b4830a91eeb1a9d4d64"
+    },
+    {
+      "path": "evidence/gate-2-solace/00-reference-analysis.md",
+      "bytes": 8529,
+      "sha256": "cf88d51def415817c414ab2b6f4409f93a7b537f5ab410c27359985dedf5a2df"
+    },
+    {
+      "path": "evidence/gate-2-solace/01-top-blockout.png",
+      "bytes": 1394627,
+      "sha256": "9663f9b455a8c3da511b893928ebc2a56bca40febf7123f21f8d627e0a2cbd2d"
+    },
+    {
+      "path": "evidence/gate-2-solace/02-perspective-blockout.png",
+      "bytes": 1427041,
+      "sha256": "a067acbea6d0c0e541219e00328eeabe9b05bd2643fc68afa84bbf8f91b0913e"
+    },
+    {
+      "path": "evidence/gate-2-solace/03-top-verified.png",
+      "bytes": 1361132,
+      "sha256": "b4d1d7af457821af332e4a9aaf86d34046c0ea57dc7e685753e74b149eb78ffb"
+    },
+    {
+      "path": "evidence/gate-2-solace/04-perspective-verified.png",
+      "bytes": 1419210,
+      "sha256": "5b4452eee2f5c0ce23d09cb48e8082ec7704667678d30e076c8c0f3492c65ce0"
+    },
+    {
+      "path": "evidence/gate-2-solace/blender_common.py",
+      "bytes": 2426,
+      "sha256": "78dadff9ca5978d8b1248972bb8c4727be4620cd9b65685fe682f084cdde967d"
+    },
+    {
+      "path": "evidence/gate-2-solace/check-review-assets.mjs",
+      "bytes": 1192,
+      "sha256": "cfdd22251697bdd6f6a64a7a8fe9d120dd0a4d314db47c0d206a6cadf7c509bc"
+    },
+    {
+      "path": "evidence/gate-2-solace/finalize_evidence.py",
+      "bytes": 1694,
+      "sha256": "a7c15f2408af664f13022a00399d59d55d5d77251926278fb18df275e554ea91"
+    },
+    {
+      "path": "evidence/gate-2-solace/GATE-2-RESULT.md",
+      "bytes": 6783,
+      "sha256": "3432470d623dd384247cc57a516fb62dd6c291c43fd7f713492300765680a5a2"
+    },
+    {
+      "path": "evidence/gate-2-solace/glb-verification.json",
+      "bytes": 376,
+      "sha256": "64aca75b7e08c61ce829490600eb328d76e0621cac3b538de8444835be9a220c"
+    },
+    {
+      "path": "evidence/gate-2-solace/HISTORY-image-blocker.md",
+      "bytes": 3020,
+      "sha256": "1cc0962c5d2caa603d24845dcd1d1298abbf26eff9d87fc1081e5a6b62239c0a"
+    },
+    {
+      "path": "evidence/gate-2-solace/mcp_stage.py",
+      "bytes": 1436,
+      "sha256": "ee7c71e8109780015ab81ffa33c3c561bfa0be86237c5919783cd5d98dc34b26"
+    },
+    {
+      "path": "evidence/gate-2-solace/scene_manifest.json",
+      "bytes": 138927,
+      "sha256": "66c942901f4141f4dde75768dcb13da8ce5b642ff5046e0471fb11f3a1493b68"
+    },
+    {
+      "path": "evidence/gate-2-solace/SOLACE_BLOCKOUT_v01.glb",
+      "bytes": 185324,
+      "sha256": "9728429a54c8db9ea1b739ca076cbf9f82e7537c3604439ff58fe5a152b755bc"
+    },
+    {
+      "path": "evidence/gate-2-solace/source_manifest.json",
+      "bytes": 1819,
+      "sha256": "b4714fcc3534cb1ad48aedd89be152f79ac6876a3bc66b076b899d8a5529d77d"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage1-mcp.json",
+      "bytes": 933,
+      "sha256": "5e0aa1343c576fa236eff05b9721a4f3dd358d4237bb591b1c796e140a3595ac"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage1.py",
+      "bytes": 2627,
+      "sha256": "4afc1b6fcd68bccf481749cc928ee407bc127b7d6719aa94ce568250481a6ef8"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage2-mcp.json",
+      "bytes": 569,
+      "sha256": "1a682ccff9047ce720f81d1c5ebe9641d858164fd3fbbc1bebae89bb27e1dcc5"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage2.py",
+      "bytes": 5198,
+      "sha256": "f9aa5a41acb6b833b8b5f1b9a76c7dffa1291f18243e4a6fc65dc4febb9eaba9"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage3-mcp.json",
+      "bytes": 1205,
+      "sha256": "88a675acdf9ef1fe720b8ab87253e4b577b842d929d74334a99b432cc4d8afd8"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage3.py",
+      "bytes": 1701,
+      "sha256": "044afb9b7d68ddeb8d1d8ce852f512cb4a2748d03b71fe69ac3c5949d637e1fc"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage4-mcp.json",
+      "bytes": 232877,
+      "sha256": "3666df48f433f5c4efd388412e15437f75f75e9466aa6b3aedb09c391f8bea28"
+    },
+    {
+      "path": "evidence/gate-2-solace/stage4.py",
+      "bytes": 3934,
+      "sha256": "9c911d17139e090615e1408981100d901d4af2fec6a4c090d28e1962c82faa4d"
+    },
+    {
+      "path": "outputs/solace/SOLACE_BLOCKOUT_v01.blend",
+      "bytes": 105524,
+      "sha256": "92ac1ea2c132e3444ac26e25065eef7b1121ae794833b034a21790ab1ea02097"
+    },
+    {
+      "path": "outputs/solace/SOLACE_BLOCKOUT_v02.blend",
+      "bytes": 152643,
+      "sha256": "909ec0e3d91a276231ffc325a3bccda7150e7db7683c55d2ef5750aa1c51daf4"
+    },
+    {
+      "path": "outputs/solace/SOLACE_BLOCKOUT_v03.blend",
+      "bytes": 148989,
+      "sha256": "cbe30038eeefd37bd7fdc38641d8ca941f25ed187cc577695df8cbd64c1b089a"
+    },
+    {
+      "path": "outputs/solace/SOLACE_BLOCKOUT_v04.blend",
+      "bytes": 171060,
+      "sha256": "46fe71b9580ea672143d4e73f0bf298f200cb5b2801c4c8882cd7698c649f737"
+    }
+  ]
+}

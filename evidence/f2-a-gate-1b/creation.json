@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Code executed successfully: {\"created\": \"LAB_TEST_CUBE\", \"position\": [0.0, 4.0, 0.0], \"rotation\": [0.0, 0.0, 0.0], \"scale\": [1.0, 1.0, 1.0], \"dimensions\": [2.0, 2.0, 2.0]}\n",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Code executed successfully: {\"created\": \"LAB_TEST_CUBE\", \"position\": [0.0, 4.0, 0.0], \"rotation\": [0.0, 0.0, 0.0], \"scale\": [1.0, 1.0, 1.0], \"dimensions\": [2.0, 2.0, 2.0]}\n"
+  },
+  "isError": false
+}
