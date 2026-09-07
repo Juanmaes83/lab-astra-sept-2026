@@ -33,6 +33,7 @@ tmp/
 temp/
 render-cache/
 outputs/solace/video-proof-frames/
+outputs/solace/video-proof-v02-frames/
 
 # OS/editor
 .DS_Store
