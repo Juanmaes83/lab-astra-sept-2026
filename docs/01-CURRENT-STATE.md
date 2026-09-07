@@ -8,14 +8,16 @@ Date: 2026-09-07
 - Node / npm available.
 - Codex CLI installed and healthy.
 - Codex auth mode: ChatGPT.
-- `gpt-6-astra` now launches successfully in Codex CLI on the project owner's machine.
+- `gpt-6-astra` active in Codex CLI on the project owner's machine.
+- Blender `5.2.1 LTS` installed.
+- `uv` installed and operational.
 - One unrelated Cloudflare MCP may still require login/cleanup; it does not block Blender MCP work.
 
 ## Astra access verification
 
 Previous 2026-09-04 state was `Astra pending`.
 
-That state is now obsolete.
+That state is obsolete.
 
 Observed on 2026-09-07:
 
@@ -23,17 +25,17 @@ Observed on 2026-09-07:
 codex -m gpt-6-astra
 ```
 
-launches a Codex session whose UI reports `gpt-6-astra` as the active model.
+launches a Codex session whose UI reports `gpt-6-astra` / `gpt-6-astra medium` as active.
 
 ### Decision
 
-Use Astra for the active LAB gate, while keeping orchestration/model selection configurable.
+Use Astra for the active LAB gates, while keeping orchestration/model selection configurable.
 
 No Blender/MCP architecture decision may depend on Astra being the only future model.
 
 ## PROJECT-PELU relationship
 
-This repository is now formally the **Spatial Production LAB** for PROJECT-PELU F2.
+This repository is formally the **Spatial Production LAB** for PROJECT-PELU F2.
 
 ```text
 LAB
@@ -53,34 +55,64 @@ Source LAB:
 
 `Juanmaes83/blender-mcp` → branch `lab/astra-sept-2026`
 
-Branch existence has been re-confirmed from GitHub.
+Operational state:
+- Safe Mode enabled with `BLENDER_MCP_SAFE_MODE=1`;
+- 69 Safe Mode tests PASS;
+- `MCP for Blender` addon enabled;
+- Blender MCP panel connected on port `9876`;
+- Codex MCP server registered as `blender-astra-lab`.
 
-Current integration gate:
+## Gate 1 result
 
-```text
-ASTRA
-→ BLENDER MCP
-→ BLENDER
-→ READ SCENE
-→ CAPTURE SCREENSHOT
-→ SMALL BOUNDED CHANGE
-→ CAPTURE / VERIFY
-```
+**Status: ✅ CLOSED / PASS — 2026-09-07**
 
-Gate evidence template:
+### Gate 1A
+- scene inspection PASS;
+- `Cube`, `Camera`, `Light` reported correctly;
+- viewport capture PASS;
+- no mutation;
+- MCP calls reported SUCCESS / `isError=false`.
+
+### Gate 1B
+- created exactly one `LAB_TEST_CUBE`;
+- position `(0,4,0)`;
+- rotation `(0,0,0)`;
+- scale `(1,1,1)`;
+- dimensions `2 × 2 × 2 m`;
+- pre-existing `Cube`, `Camera`, `Light` unchanged;
+- before/after capture PASS;
+- no correction required;
+- no `.blend` overwritten.
+
+Full textual result:
 
 `evidence/gate-1/gate-1-result.md`
+
+Local Astra evidence paths were reported for Gate 1A and Gate 1B; screenshot binaries still need normal Git upload/push from the local LAB branch so GitHub holds the complete visual record.
 
 ## Active branch
 
 `feat/astra-blender-gate-1`
 
-## Next action on local Windows machine
+## Next action
 
-Follow `docs/07-BLENDER-CODEX-SETUP.md` and execute Gate 1A read-only first.
+Gate 2 is now NEXT: create the smallest useful real-estate spatial slice before starting full SOLACE.
 
-SOLACE remains blocked until Gate 1A + Gate 1B are PASS with screenshot/scene evidence.
+Target Gate 2 loop:
+
+```text
+CLEAN/VERSIONED SCENE
+→ BOUNDED ARCHITECTURAL BLOCKOUT
+→ DIMENSION CHECK
+→ CAPTURE
+→ VERIFY
+→ CORRECT IF NEEDED
+→ GLB EXPORT
+→ MINIMAL SCENE MANIFEST
+```
+
+SOLACE remains blocked until Gate 2 proves that Astra+Blender can generate a reviewable real-estate-relevant asset, not just infrastructure/test geometry.
 
 ## Benchmark references
 
-SOLACE / Thomas-Astra reference material remains the first architectural benchmark after Gate 1. Original binaries can be uploaded manually, with provenance/source manifests committed alongside them.
+SOLACE / Thomas-Astra reference material remains the first full architectural benchmark after Gate 2. Original binaries can be uploaded manually, with provenance/source manifests committed alongside them.
