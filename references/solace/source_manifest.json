@@ -1,0 +1,21 @@
+{
+  "id": "solace-concept-01-floorplan",
+  "project": "SOLACE — The Garden House / Concept 01",
+  "role": "authoritative_visual_reference_for_gate_2",
+  "file": "references/solace/SOLACE-CONCEPT-01-FLOORPLAN.jpg",
+  "provided_by": "project_owner",
+  "provided_date": "2026-09-07",
+  "source_origin": "user_supplied_reference",
+  "rights_status": "to_be_confirmed_before_external_publication_or_commercial_redistribution",
+  "verification": {
+    "type": "reference_image",
+    "status": "SOURCE_REFERENCE_ONLY",
+    "notes": "Use visible labels, dimensions and adjacency as the Gate 2 geometry authority. Do not present inferred or unreadable values as verified facts."
+  },
+  "visible_global_dimensions": {
+    "overall_width_m_approx": 25.4,
+    "overall_depth_m_approx": 17.0,
+    "lap_pool_m_approx": [10.0, 3.5]
+  },
+  "truth_policy": "The source is authoritative for the benchmark image only. The Blender reconstruction remains a reconstructed/design interpretation until separately verified."
+}
