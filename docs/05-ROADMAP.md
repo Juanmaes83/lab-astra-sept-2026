@@ -6,25 +6,30 @@ Status: ✅ CLOSED — 2026-09-07
 - OpenAI/Codex environment ready.
 - Codex CLI installed and healthy.
 - ChatGPT auth configured.
-- `gpt-6-astra` now launches successfully in Codex CLI.
+- `gpt-6-astra` launches successfully in Codex CLI.
 - Model-swappable architecture retained.
 
 ## Phase 1 — Blender MCP Gate 1
-Status: 🟡 IN PROGRESS
+Status: ✅ CLOSED — 2026-09-07
 
 Goal: prove reliable local Astra → Blender control with evidence.
 
-1. use `Juanmaes83/blender-mcp` branch `lab/astra-sept-2026`;
-2. install/update Blender addon;
-3. enable Safe Mode;
-4. register Blender MCP server in Codex;
-5. confirm MCP health;
-6. read current Blender scene without modifying it;
-7. capture viewport;
-8. create one bounded object/change only;
-9. recapture;
-10. verify identity + dimensions + visual result;
-11. save evidence and PASS/FAIL record.
+Completed:
+1. `Juanmaes83/blender-mcp` branch `lab/astra-sept-2026` used as source;
+2. Blender 5.2.1 LTS installed;
+3. MCP addon enabled;
+4. Safe Mode enabled;
+5. 69 Safe Mode tests PASS;
+6. Blender MCP registered in Codex as `blender-astra-lab`;
+7. MCP connected on port 9876;
+8. Gate 1A read-only scene inspection PASS;
+9. viewport capture PASS;
+10. Gate 1B bounded mutation PASS;
+11. `LAB_TEST_CUBE` created at `(0,4,0)` with dimensions `2 × 2 × 2 m`;
+12. Cube, Camera and Light remained unchanged;
+13. before/after capture and verification PASS;
+14. no `.blend` file overwritten;
+15. PASS record stored in `evidence/gate-1/gate-1-result.md`.
 
 Completion condition:
 
@@ -37,10 +42,41 @@ READ SCENE
 = PASS
 ```
 
-No SOLACE work before this gate passes.
+Gate result: **PASS**.
 
-## Phase 2 — SOLACE architectural benchmark
-Status: ⚪ BLOCKED BY PHASE 1
+## Phase 2 — Gate 2 / Smallest useful real-estate spatial slice
+Status: 🟡 NEXT
+
+Goal: move from infrastructure proof to a reviewable real-estate spatial artifact without jumping directly to a full reconstruction.
+
+Proposed slice:
+1. start from a clean/versioned Blender scene;
+2. create a bounded architectural composition representing a simple room shell / living-space blockout;
+3. use stable semantic object names;
+4. verify dimensions and adjacency;
+5. capture fixed-view evidence;
+6. perform one correction loop if needed;
+7. save a versioned `.blend` only after review;
+8. export a first candidate GLB;
+9. record scene metadata in a minimal `scene_manifest.json`;
+10. classify result PASS/FAIL before expanding to SOLACE.
+
+Completion condition:
+
+```text
+BOUNDED REAL-ESTATE SCENE
++ DIMENSION CHECK
++ VISUAL CAPTURE
++ CORRECTION LOOP
++ GLB EXPORT
++ MANIFEST
+= PASS
+```
+
+This phase is intentionally small. It proves that the Astra→Blender loop can create an asset that is relevant to PROJECT-PELU, not just a test cube.
+
+## Phase 3 — SOLACE architectural benchmark
+Status: ⚪ BLOCKED BY GATE 2
 
 1. upload/reference original SOLACE media;
 2. create source manifest;
@@ -55,7 +91,7 @@ Status: ⚪ BLOCKED BY PHASE 1
 
 Completion condition: recognizably coherent architectural slice with review evidence and an `ACCEPTED SPATIAL PACKAGE`.
 
-## Phase 3 — PROJECT-PELU handoff proof
+## Phase 4 — PROJECT-PELU handoff proof
 Status: ⚪ NOT STARTED
 
 1. package accepted GLB;
@@ -67,20 +103,20 @@ Status: ⚪ NOT STARTED
 
 Completion condition: one LAB-produced spatial asset loads in PROJECT-PELU while F1 remains intact.
 
-## Phase 4 — Geospatial proof
+## Phase 5 — Geospatial proof
 Status: ⚪ DEFERRED
 
 Torrevieja/Altea bounded proof using open/owned geodata. Do not start while architectural F2 gates remain open.
 
-## Phase 5 — Hero asset enrichment
+## Phase 6 — Hero asset enrichment
 Status: ⚪ DEFERRED
 
-## Phase 6 — Blender → Unreal
+## Phase 7 — Blender → Unreal
 Status: ⛔ BLOCKED
 
 Only after Blender control, QA and architectural handoff are stable.
 
-## Phase 7 — Persistence / orchestration upgrades
+## Phase 8 — Persistence / orchestration upgrades
 Status: ⚪ LATER
 
 Rome/persistent capability, remote monitoring, spatial audio, region streaming and multi-agent orchestration only after the core proof.
