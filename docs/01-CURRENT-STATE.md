@@ -35,7 +35,7 @@ The SOLACE floorplan was interpreted into a recognizable controllable Blender bl
 
 This proved spatial interpretation/control. It did not prove premium visual fidelity.
 
-## Video proofs produced
+## Historical video proofs
 
 ### `SOLACE_VIDEO_PROOF_v01`
 
@@ -54,20 +54,13 @@ Remote commit:
 
 `9d3a2adf14f9da7c5c9c118d654c6efa20ce6104`
 
-The v02 scene used the cinematic target but remained a procedural technical proof. Human review found material gaps in:
-
-- camera timing / frame match;
-- hero furniture geometry;
-- material realism;
-- glazing / exterior vegetation;
-- lighting / atmosphere;
-- overall photoreal quality.
+The v02 scene used the cinematic target but remained a procedural technical proof. Human review found material gaps in camera timing, hero furniture geometry, material realism, glazing/exterior vegetation, lighting/atmosphere and overall photoreal quality.
 
 The code itself recorded camera timing as manually inferred and rendered a 24 fps / 312-frame sequence, so v02 is not the accepted reconstruction of the real 30 fps / approximately 14-second source shot.
 
 **Status: ❌ NOT ACCEPTED AS PHOTOREAL OUTPUT.**
 
-## Reference media now available
+## Reference media
 
 Authoritative cinematic target:
 
@@ -77,13 +70,21 @@ Process-support video:
 
 `references/solace/video/VIDEO_REFERENCIA_SOLACE_BLENDER_PROCESS.mp4`
 
-Verified source plan remains available under `references/solace/`.
+Verified source plan:
 
-## Strategy pivot — 2026-09-08
+`references/solace/HRUOGWHaMAATXEa.jpg`
 
-The previous micro-gate / POC methodology is no longer the active production strategy for SOLACE.
+Fixed anchor stills:
 
-The LAB now adopts Matt Shumer's reference-first Astra workflow as its primary external production guide:
+`references/solace/stills/`
+
+Reference manifest:
+
+`references/solace/REFERENCE-MANIFEST.json`
+
+## Strategy — adopted 2026-09-08
+
+The LAB uses Matt Shumer's reference-first Astra workflow as its primary external production guide:
 
 https://somethingbig.ai/3d-worlds
 
@@ -101,16 +102,12 @@ REFERENCE
 → SHIP
 ```
 
-Key changes:
+The LAB also preserves a mandatory cross-session learning/cost protocol:
 
-- run production as a `/goal` mission when supported;
-- fan out specialized workers rather than one monolithic builder;
-- anchor every important visual decision to real reference media;
-- use a fresh-context independent critic;
-- convert every visual tell into a concrete work order;
-- internally iterate until the reference bar is materially met;
-- do not stop because an MP4 simply exists;
-- preserve final human acceptance for Juanma + ChatGPT.
+- `docs/10-SOLACE-LESSONS-AND-COST-EFFICIENCY.md`
+- `docs/11-ASTRA-RUN-PLAYBOOK.md`
+- `templates/ASTRA_RUN_REPORT_TEMPLATE.md`
+- latest relevant reports under `evidence/runs/`
 
 ## Active branch
 
@@ -118,39 +115,86 @@ Key changes:
 
 The branch name is historical. It does not mean Gate 1 remains active.
 
-## Current active benchmark
+## SOLACE photoreal benchmark
 
-**SOLACE PHOTOREAL CINEMATIC RECONSTRUCTION**
-
-Target first shot:
+### Target
 
 ```text
 Living → Dining → Kitchen
 approximately 00:00.000 → 00:13.967
 hard cut at approximately 00:14.000
-30 fps source cadence
-14.0 s / 420-frame review target
+30 fps
+14.0 s / 420 frames
+1920 × 1080
 ```
 
-Primary objective:
+### Final accepted deliverables
 
-> Reconstruct the specific source shot at premium/reference-grounded visual quality, with camera choreography, visible architecture, hero furnishings, materials, glazing, exterior, lighting and atmosphere aligned to the real reference.
+- Blend: `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend`
+- MP4: `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4`
+- Delivery commit: `aec9f944ab3a5f7296f040450791d5aedd79f6ed`
+- Renderer: Cycles GPU / OptiX
+- Technical verification: `evidence/solace-photoreal-goal-v01/technical-verification.json`
+- Final render run report: `evidence/runs/2026-09-08-solace-final-render-v01.md`
+- Human acceptance: `evidence/solace-photoreal-goal-v01/HUMAN-ACCEPTANCE.md`
+
+### Human verdict
+
+**Status: ✅ HUMAN ACCEPTED / BENCHMARK COMPLETE — 2026-09-08**
+
+Juanma reviewed the completed final MP4 and explicitly approved the quality improvement as sufficient to close SOLACE v01 and continue advancing the project.
+
+The accepted output remains a reconstructed/design visualization; acceptance does not claim exact source indistinguishability, survey/BIM accuracy or VERIFIED_REAL status.
+
+Known residual differences in reflections, furniture, forest/environment and secondary props are accepted for this benchmark and do not justify another correction/render loop by default.
+
+## Freeze rule
+
+`SOLACE_PHOTOREAL_GOAL_v01` is now frozen as the accepted benchmark artifact.
+
+Do NOT:
+
+- rebuild it by default;
+- rerender it by default;
+- regenerate anchors by default;
+- reopen independent critique by default;
+- spend Astra credits polishing residual differences without a new explicit objective;
+- overwrite the accepted `.blend` or `.mp4` without creating a new version.
+
+Any future SOLACE change must be a new version/goal and preserve v01.
+
+## What SOLACE proved
+
+The benchmark demonstrated that the LAB can move from authoritative visual references and a floorplan to a materially higher-quality reference-grounded Blender reconstruction and a continuous photoreal review video.
+
+The successful production pattern was:
+
+```text
+REFERENCES
+→ FIXED ANCHORS
+→ REUSE BEST BASE
+→ SPECIALIZED ASTRA/BLENDER WORK
+→ INDEPENDENT CRITIQUE
+→ CONSOLIDATED CORRECTIONS
+→ HUMAN ANCHOR PREFLIGHT
+→ FINAL RENDER
+→ HUMAN PLAYBACK ACCEPTANCE
+```
+
+The quality jump over v01/v02 came from process quality—reference grounding, camera solve, asset/material/lighting work and structured critique—not merely higher render samples.
 
 ## Next action
 
-**APPROVED FINAL RENDER COMPLETE — MP4 READY FOR PLAYBACK.**
+**SOLACE v01 requires no further production work.**
 
-Production has advanced through assembly r12. Best saved scene:
-`outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend` (packed textures, 420 frames / 30 fps / 1080p Cycles settings).
+The next project action must be chosen explicitly. Valid options include:
 
-Review source versus current anchors:
-`evidence/solace-photoreal-goal-v01/PREFLIGHT.md`.
+1. prepare a PROJECT-PELU handoff package from the accepted SOLACE asset;
+2. run the optional hybrid generative finishing experiment as a separate experiment/version;
+3. advance to another spatial benchmark/project using the learned Astra run playbook;
+4. proceed to a later geospatial or Blender→Unreal phase when explicitly prioritized.
 
-Juanma explicitly completed human anchor preflight with `APPROVE FINAL RENDER`. The frozen approved scene was resumed from frame10 without overwriting frames1–9. Corrected final MP4: `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4`,14.000s,420frames,1920×1080,30fps,H264,9,929,912bytes. Cycles GPU/OPTIX render, full decode and black-frame detection succeeded. Blend hash unchanged. Historical renders remain archived locally.
-
-Resume memory: `evidence/runs/2026-09-08-solace-final-render-v01.md`. Technical evidence: `evidence/solace-photoreal-goal-v01/technical-verification.json`. Do not rebuild, rerender, regenerate anchors or reopen critique without a new request. Human preflight is completed; no later human playback verdict or PROJECT-PELU acceptance is invented.
-
-The next Astra execution must follow `docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md` and must not be framed as another infrastructure gate or low-quality proof render.
+Do not let a new Astra session infer that SOLACE polishing is the next action.
 
 ## PROJECT-PELU relationship
 
@@ -165,4 +209,4 @@ HUMAN-ACCEPTED SPATIAL OUTPUT
 PROJECT-PELU
 ```
 
-Do not hand v01/v02 to PROJECT-PELU as accepted premium assets.
+`SOLACE_PHOTOREAL_GOAL_v01` is now human-accepted and therefore **eligible for handoff consideration**. The actual PROJECT-PELU handoff is a separate explicit decision and has not been performed by this state update.
