@@ -1,0 +1,45 @@
+{
+  "id": "solace-cinematic-reference-pack-v1",
+  "project": "SOLACE — The Garden House / Concept 01",
+  "authority_order": [
+    "references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4",
+    "references/solace/HRUOGWHaMAATXEa.jpg",
+    "references/solace/stills/",
+    "references/solace/video/VIDEO_REFERENCIA_SOLACE_BLENDER_PROCESS.mp4",
+    "previous LAB renders are implementation history only"
+  ],
+  "cinematic_target": {
+    "file": "references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4",
+    "source_recording_dimensions": [1990, 1426],
+    "fps": 30,
+    "first_shot": {
+      "start_seconds": 0.0,
+      "last_reference_seconds": 13.8,
+      "hard_cut_seconds_approx": 14.0
+    },
+    "active_picture_processing": {
+      "crop": [0, 156, 1990, 1120],
+      "delivery_dimensions": [1920, 1080],
+      "note": "Crop removes screen-recording black/player regions and preserves the useful 16:9 cinematic picture."
+    }
+  },
+  "anchor_stills": [
+    {"file": "references/solace/stills/SOLACE_TARGET_00000ms.jpg", "timestamp_seconds": 0.0, "source_frame_index": 0, "role": "Exterior/glazing opening composition — library left, sofa center, dining right."},
+    {"file": "references/solace/stills/SOLACE_TARGET_02000ms.jpg", "timestamp_seconds": 2.0, "source_frame_index": 60, "role": "Exterior approach through glazing — preserve mullions/reflections and room depth."},
+    {"file": "references/solace/stills/SOLACE_TARGET_04000ms.jpg", "timestamp_seconds": 4.0, "source_frame_index": 120, "role": "Living approach — sofa/library scale and rear doorway become dominant."},
+    {"file": "references/solace/stills/SOLACE_TARGET_06000ms.jpg", "timestamp_seconds": 6.0, "source_frame_index": 180, "role": "Living hero — sofa fills frame; dining transition not yet advanced."},
+    {"file": "references/solace/stills/SOLACE_TARGET_08000ms.jpg", "timestamp_seconds": 8.0, "source_frame_index": 240, "role": "Dining hero — table/chairs dominant; kitchen begins to enter."},
+    {"file": "references/solace/stills/SOLACE_TARGET_10000ms.jpg", "timestamp_seconds": 10.0, "source_frame_index": 300, "role": "Dining to Kitchen transition — island gains foreground importance."},
+    {"file": "references/solace/stills/SOLACE_TARGET_12000ms.jpg", "timestamp_seconds": 12.0, "source_frame_index": 360, "role": "Kitchen hero — island foreground, rear sink/window, tall units/opening."},
+    {"file": "references/solace/stills/SOLACE_TARGET_13800ms.jpg", "timestamp_seconds": 13.8, "source_frame_index": 414, "role": "Kitchen end frame immediately before the hard cut at approximately 14.0 s."}
+  ],
+  "process_support": {
+    "file": "references/solace/video/VIDEO_REFERENCIA_SOLACE_BLENDER_PROCESS.mp4",
+    "authority": "PROCESS_SUPPORT_ONLY"
+  },
+  "floorplan": {
+    "file": "references/solace/HRUOGWHaMAATXEa.jpg",
+    "authority": "SPATIAL_TOPOLOGY_CONSTRAINT"
+  },
+  "truth_policy": "Source media is authoritative for the benchmark. Generated Blender work is reconstructed/design interpretation until separately verified."
+}
