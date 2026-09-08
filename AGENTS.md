@@ -4,7 +4,7 @@
 
 Build reference-grounded spatial/cinematic outputs that prove real visual capability, not merely tool connectivity or file production.
 
-For the active SOLACE benchmark, the production method is:
+Canonical reference-first production method:
 
 ```text
 REFERENCE → ASSETS → ASSEMBLY → CRITIQUE → SHIP
@@ -20,154 +20,155 @@ https://somethingbig.ai/3d-worlds
 
 ## Current model state
 
-- Current execution model: `gpt-6-astra` through Codex CLI.
+- Current execution model: `gpt-6-astra` through Codex CLI when the active session reports it.
 - Astra access is confirmed on the project owner's Windows machine.
 - Blender 5.2.1 LTS + Blender MCP are operational.
 - Keep the workflow model-swappable; no architecture contract may depend permanently on Astra.
-- Never claim Astra is active unless the active Codex session reports `gpt-6-astra`.
 
 ## Closed historical gates
 
 Gate 1 / Blender MCP connectivity is CLOSED.
 
-SOLACE floorplan/blockout proof is also complete as a spatial capability proof.
+SOLACE floorplan/blockout proof is CLOSED as a spatial capability proof.
 
-Do NOT repeat setup, Gate 1, test-cube work, blockout existence checks, viewer QA or other historical infrastructure tasks unless an actual regression blocks the current goal.
+Do NOT repeat setup, Gate 1, test-cube work, blockout existence checks, viewer QA or other historical infrastructure tasks unless an actual regression blocks a new goal.
 
-## Current active goal
+## SOLACE benchmark state — frozen accepted output
 
-**SOLACE PHOTOREAL CINEMATIC RECONSTRUCTION**
+**SOLACE PHOTOREAL GOAL v01 is HUMAN ACCEPTED / BENCHMARK COMPLETE.**
 
-Target:
+Accepted deliverables:
+
+- `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend`
+- `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4`
+- delivery commit: `aec9f944ab3a5f7296f040450791d5aedd79f6ed`
+- human acceptance: `evidence/solace-photoreal-goal-v01/HUMAN-ACCEPTANCE.md`
+- final run report: `evidence/runs/2026-09-08-solace-final-render-v01.md`
+
+Target achieved for this benchmark:
 
 - authoritative source: `references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4`;
 - first continuous shot approximately `00:00.000 → 00:13.967`;
-- hard cut at approximately `00:14.000`;
+- 14.000 s;
+- 420 frames;
+- 1920 × 1080;
 - 30 fps;
 - Living → Dining → Kitchen;
-- visually premium, reference-grounded reconstruction.
+- Cycles GPU / OptiX.
 
-`SOLACE_VIDEO_PROOF_v01` and `v02` are historical technical proofs only. They are not accepted photoreal outputs.
+Historical `SOLACE_VIDEO_PROOF_v01` and `v02` remain technical proofs only and must not replace the accepted photoreal v01.
 
-## Goal-mode execution
+## SOLACE freeze rule
 
-For this benchmark, use `/goal` when supported.
+Do NOT, by default:
+
+- rebuild the accepted scene;
+- rerender the accepted sequence;
+- regenerate its anchor pack;
+- reopen its critic loop;
+- spend Astra credits polishing residual reflections/furniture/forest differences;
+- overwrite the accepted `.blend` or `.mp4`.
+
+Any future SOLACE work requires a new explicit objective and a new version/goal while preserving accepted v01.
+
+A new Astra session must not infer that additional SOLACE polishing is the next task.
+
+## Goal-mode execution for future benchmarks
+
+Use `/goal` when supported for substantial production benchmarks.
 
 Do not stop merely because:
 - a `.blend` exists;
 - an MP4 exists;
 - Blender rendered without error;
-- the sequence generally travels Living → Dining → Kitchen.
+- a generic route is present.
 
-Stop only when:
-- the reference-driven quality bar is materially met; or
-- a real technical / policy / approved-budget blocker requires human intervention.
+Do not continue indefinitely either. The economic production pattern is:
 
-Do not expose dozens of internal micro-gates to the user. Internal iteration is expected.
+```text
+ONE HUMAN GOAL
+→ HIGH-INFORMATION INTERNAL ITERATION
+→ CHEAP ANCHOR PACK
+→ CONSOLIDATED CRITIC
+→ CONSOLIDATED CORRECTION
+→ HUMAN ANCHOR REVIEW
+→ ONE FINAL RENDER
+→ HUMAN PLAYBACK DECISION
+→ FREEZE ACCEPTED VERSION
+```
 
 ## Reference rules
 
-Reference truth order:
+Reference truth order for reference-grounded reconstruction:
 
-1. authoritative SOLACE cinematic target;
-2. verified source plan / floorplan;
-3. supplied SOLACE still references;
-4. Blender/process reference as process support only;
-5. generated LAB outputs as implementation history only.
+1. authoritative target media;
+2. verified plan/floorplan or other owned source constraints;
+3. supplied still references;
+4. process/support references;
+5. generated outputs as implementation history only.
 
-Never let a previous generated scene overrule real source evidence.
+Never let previous generated work overrule real source evidence.
 
 ## Specialized workers
 
-When the active environment supports sub-agents/workers, fan out focused ownership rather than having one builder cut corners across the full scene.
+When supported, fan out focused ownership rather than having one builder cut corners across the full scene.
 
-Preferred SOLACE domains:
+Typical domains:
 
 1. reference + frame analysis;
 2. camera / lens / timing;
 3. architecture + openings;
-4. living hero assets;
-5. dining hero assets;
-6. kitchen hero assets;
-7. materials + surface imperfections;
-8. glazing + exterior + vegetation;
-9. lighting + exposure + atmosphere;
-10. render / finishing;
-11. independent visual critic.
+4. hero assets;
+5. materials + surface detail;
+6. glazing + exterior + vegetation;
+7. lighting + exposure + atmosphere;
+8. render / finishing;
+9. independent visual critic.
 
-Each worker is responsible for visual fidelity of its domain.
+Each worker owns fidelity of its domain; the main agent owns prioritization and assembly.
 
 ## Builder / critic separation
 
 The builder must not grade its own work.
 
-Use a fresh-context critic when supported.
+Use a fresh-context critic when supported. Convert meaningful visible tells into concrete work orders, but consolidate criticism before triggering expensive rework.
 
-For significant reference checkpoints:
-- pair the real reference frame with the generated render;
-- normalize presentation where practical;
-- blind/shuffle them;
-- ask the critic which is the real reference and why;
-- translate every visible tell into a concrete work order;
-- send the work order to the responsible builder;
-- iterate.
-
-The critic must be demanding. Generic praise is not acceptance evidence.
+The critic does not own cost policy and does not authorize another full render.
 
 ## Blender rules
 
 - Prefer Safe Mode for agent-driven Blender execution.
 - Save/version `.blend` before major mutations.
-- Use Blender/Python procedurally when useful, but procedural does not justify primitive hero assets.
-- Cubes/cylinders are acceptable for hidden structure and internal proxies; hero-visible final assets require credible geometry/material response.
+- Procedural does not justify primitive hero assets.
+- Cubes/cylinders are acceptable for blocking, hidden support and cheap previews; hero-visible final assets require credible geometry/material response.
 - Do not assume more render samples can fix weak geometry/materials.
-- Preserve useful existing work from v02 where it accelerates fidelity; do not rebuild blindly from zero.
-- Camera must be measured against source frames, not simply described as manually inferred.
-
-## Camera reconstruction rule
-
-Use source-frame checkpoints around:
-
-```text
-0.0 s
-2.0 s
-4.0 s
-6.0 s
-8.0 s
-10.0 s
-12.0 s
-13.8 s
-```
-
-Compare stable screen-space landmarks: glazing, library, sofa, dining table, island, rear windows and tall kitchen units.
-
-The first shot target is 14.0 s at 30 fps / 420 frames for review delivery.
+- Reuse accepted work where it accelerates a new goal; do not rebuild blindly from zero.
+- Camera must be measured against source frames where reference matching matters.
 
 ## Cost discipline
 
-Astra is expensive. Spend its budget on the differential 3D work that improves the benchmark:
+Astra is expensive. Spend its budget on differential work that materially improves the active goal:
 
-- reference analysis;
+- reference interpretation;
 - camera reconstruction;
 - asset modeling;
 - materials;
 - lighting;
-- rendering;
-- independent critique and correction.
+- rendering orchestration;
+- independent critique and consolidated correction.
 
 Do not spend Astra tokens on:
 - repeated setup checks;
 - viewer/Vercel housekeeping;
-- long documentation reports;
-- unrelated PROJECT-PELU work;
-- refining invisible property areas;
-- work ChatGPT + Juanma can do outside Blender.
+- long documentation narration;
+- work ChatGPT + Juanma can do outside Blender;
+- polishing an already accepted benchmark without a new objective.
 
-Before an expensive final sequence render, follow the economic gate in `docs/11-ASTRA-RUN-PLAYBOOK.md`: cheap anchor pack → consolidated critic → consolidated correction → Juanma + ChatGPT human anchor review → explicit final-render approval.
+Before an expensive final sequence render, follow `docs/11-ASTRA-RUN-PLAYBOOK.md`.
 
 ## Persistent learning protocol — mandatory
 
-This LAB must learn across sessions through repository memory, not assumed model memory.
+This LAB learns across sessions through repository memory, not assumed model memory.
 
 At the start of every meaningful production session, read:
 
@@ -183,15 +184,13 @@ At the end of every meaningful production interaction:
 
 1. create/update a run report using `templates/ASTRA_RUN_REPORT_TEMPLATE.md`;
 2. record what was attempted, how it was done, problems found, root causes, fixes and verification;
-3. record what consumed avoidable time/tokens/compute when known;
+3. record avoidable time/tokens/compute when known;
 4. preserve a concise resume packet: best current state, accepted work, unresolved issues, `DO NOT REDO`, and next best action;
-5. update `docs/10-SOLACE-LESSONS-AND-COST-EFFICIENCY.md` only when a reusable lesson is confirmed;
-6. update `docs/11-ASTRA-RUN-PLAYBOOK.md` only when the standard workflow should change;
-7. update `docs/01-CURRENT-STATE.md` when the active project state materially changes.
+5. update the lessons file only when a reusable lesson is confirmed;
+6. update the playbook only when the standard workflow changes;
+7. update current state when project state materially changes.
 
 Do not paste full terminal transcripts into run reports. The purpose is to reduce future context cost, not create documentation bloat.
-
-A meaningful expensive run is not operationally complete if the next session would have to rediscover what this session already learned.
 
 ## Human approval gates
 
@@ -200,11 +199,13 @@ Stop before:
 - destructive overwrite of important source data without saved version;
 - publishing externally beyond already approved review channels;
 - changing permissions/secrets;
-- paid external-service usage outside the already approved tool/model budget.
+- paid external-service usage outside the approved budget;
+- an expensive final full render before required human anchor approval.
 
-Final human visual acceptance belongs to Juanma + ChatGPT.
+Final visual acceptance belongs to Juanma + ChatGPT / project owner review.
 
-Astra must report `HUMAN VISUAL REVIEW: PENDING`, never self-approve the cinematic benchmark.
+Before human acceptance, report `HUMAN VISUAL REVIEW: PENDING`.
+After explicit human acceptance, preserve the acceptance record and freeze that version.
 
 ## PROJECT-PELU handoff rules
 
@@ -213,6 +214,8 @@ Astra must report `HUMAN VISUAL REVIEW: PENDING`, never self-approve the cinemat
 - Only human-`ACCEPTED` assets may be handed off.
 - Preserve provenance and source manifests.
 - F1 panorama fallback remains owned by PROJECT-PELU.
+
+`SOLACE_PHOTOREAL_GOAL_v01` is now eligible for handoff consideration, but no handoff occurs automatically. Require an explicit handoff decision.
 
 ## Geospatial rules
 
@@ -223,19 +226,21 @@ Astra must report `HUMAN VISUAL REVIEW: PENDING`, never self-approve the cinemat
 
 ## Scope discipline
 
-Do not expand to unrelated Unreal/geospatial/world-building work until the active SOLACE photoreal benchmark has a clear result or an explicit strategy decision changes priority.
+The SOLACE benchmark is complete. Do not reopen it by default.
+
+Future work must follow the explicitly selected next phase/project rather than falling back to old SOLACE polishing, old gates or unrelated experiments.
 
 ## Completion evidence
 
 A production goal is reviewable when it leaves:
-- versioned `.blend`;
-- final MP4/render;
+- versioned `.blend`/scene artifact as applicable;
+- final render/video as applicable;
 - relevant source/reference mapping;
-- concise record of critic findings / work orders resolved;
+- concise critic/work-order record;
 - commit SHA;
-- explicit `HUMAN VISUAL REVIEW: PENDING`.
+- explicit human-review state.
 
-Do not create evidence bureaucracy that does not improve visual decision-making.
+A human-accepted goal additionally leaves a human acceptance record and becomes frozen unless a new explicit version is authorized.
 
 ## Reporting
 
@@ -244,4 +249,5 @@ Keep final Astra reporting concise:
 2. technical facts;
 3. commit SHA;
 4. unresolved material limitations;
-5. human visual review pending.
+5. human visual review state;
+6. next action only if explicitly authorized.
