@@ -163,6 +163,36 @@ Do not spend Astra tokens on:
 - refining invisible property areas;
 - work ChatGPT + Juanma can do outside Blender.
 
+Before an expensive final sequence render, follow the economic gate in `docs/11-ASTRA-RUN-PLAYBOOK.md`: cheap anchor pack → consolidated critic → consolidated correction → Juanma + ChatGPT human anchor review → explicit final-render approval.
+
+## Persistent learning protocol — mandatory
+
+This LAB must learn across sessions through repository memory, not assumed model memory.
+
+At the start of every meaningful production session, read:
+
+1. `AGENTS.md`;
+2. `docs/01-CURRENT-STATE.md`;
+3. `docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md`;
+4. `docs/10-SOLACE-LESSONS-AND-COST-EFFICIENCY.md`;
+5. `docs/11-ASTRA-RUN-PLAYBOOK.md`;
+6. the latest relevant report under `evidence/runs/`;
+7. the relevant source/reference manifest.
+
+At the end of every meaningful production interaction:
+
+1. create/update a run report using `templates/ASTRA_RUN_REPORT_TEMPLATE.md`;
+2. record what was attempted, how it was done, problems found, root causes, fixes and verification;
+3. record what consumed avoidable time/tokens/compute when known;
+4. preserve a concise resume packet: best current state, accepted work, unresolved issues, `DO NOT REDO`, and next best action;
+5. update `docs/10-SOLACE-LESSONS-AND-COST-EFFICIENCY.md` only when a reusable lesson is confirmed;
+6. update `docs/11-ASTRA-RUN-PLAYBOOK.md` only when the standard workflow should change;
+7. update `docs/01-CURRENT-STATE.md` when the active project state materially changes.
+
+Do not paste full terminal transcripts into run reports. The purpose is to reduce future context cost, not create documentation bloat.
+
+A meaningful expensive run is not operationally complete if the next session would have to rediscover what this session already learned.
+
 ## Human approval gates
 
 Stop before:
