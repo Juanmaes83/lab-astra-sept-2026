@@ -14,6 +14,8 @@ __pycache__/
 
 # Node
 node_modules/
+dist/
+.vercel/
 .npm/
 
 # Codex / local agent state
@@ -30,6 +32,17 @@ cache/
 tmp/
 temp/
 render-cache/
+outputs/solace/video-proof-frames/
+outputs/solace/video-proof-v02-frames/
+outputs/solace/video-proof-v03-frames/
+outputs/solace/video-proof-v03-preview/
+outputs/solace/photoreal-work/
+outputs/solace/assets/*.exr
+outputs/solace/assets/*.png
+outputs/solace/assets/*.jpg
+outputs/solace/assets/pine_sapling_small/*.blend
+outputs/solace/assets/pine_sapling_small/textures/
+outputs/solace/assets/pine_sapling_small/review_textures/
 
 # OS/editor
 .DS_Store
@@ -39,3 +52,4 @@ Thumbs.db
 
 # Logs
 *.log
+.vercel

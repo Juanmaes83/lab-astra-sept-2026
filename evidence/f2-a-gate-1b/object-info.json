@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"name\": \"LAB_TEST_CUBE\",\n  \"type\": \"MESH\",\n  \"location\": [\n    0.0,\n    4.0,\n    0.0\n  ],\n  \"rotation\": [\n    0.0,\n    0.0,\n    0.0\n  ],\n  \"scale\": [\n    1.0,\n    1.0,\n    1.0\n  ],\n  \"visible\": true,\n  \"materials\": [],\n  \"world_bounding_box\": [\n    [\n      -1.0,\n      3.0,\n      -1.0\n    ],\n    [\n      1.0,\n      5.0,\n      1.0\n    ]\n  ],\n  \"mesh\": {\n    \"vertices\": 8,\n    \"edges\": 12,\n    \"polygons\": 6\n  }\n}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "{\n  \"name\": \"LAB_TEST_CUBE\",\n  \"type\": \"MESH\",\n  \"location\": [\n    0.0,\n    4.0,\n    0.0\n  ],\n  \"rotation\": [\n    0.0,\n    0.0,\n    0.0\n  ],\n  \"scale\": [\n    1.0,\n    1.0,\n    1.0\n  ],\n  \"visible\": true,\n  \"materials\": [],\n  \"world_bounding_box\": [\n    [\n      -1.0,\n      3.0,\n      -1.0\n    ],\n    [\n      1.0,\n      5.0,\n      1.0\n    ]\n  ],\n  \"mesh\": {\n    \"vertices\": 8,\n    \"edges\": 12,\n    \"polygons\": 6\n  }\n}"
+  },
+  "isError": false
+}

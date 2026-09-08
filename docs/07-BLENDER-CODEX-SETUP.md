@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Connect the current Codex model to the September Blender MCP LAB without depending on Astra rollout.
+Connect **GPT-6 Astra in Codex CLI** to the September Blender MCP LAB and prove the first bounded read → act → capture → verify loop.
 
 ## Source Blender MCP
 
@@ -12,43 +12,45 @@ Use:
 
 That branch is the technical MCP implementation source. This repository remains the higher-level experiment/orchestration repo.
 
-## Windows prerequisites already verified
+## Windows prerequisites
+
+Already observed on the project owner's machine:
 
 - Node / npm available.
 - Codex CLI installed.
-- Codex Doctor healthy.
-- ChatGPT auth configured.
-- Current working model: `gpt-5.6-sol`.
+- Codex authenticated through ChatGPT.
+- `gpt-6-astra` launches successfully.
 
-## Windows Codex PATH note
-
-On the current Windows machine Codex is installed through npm at:
+Codex npm path previously observed:
 
 ```text
 C:\Users\temp123\AppData\Roaming\npm\codex.cmd
 ```
 
-A temporary `$env:Path += ...` change only survives the current PowerShell session. If a new PowerShell window reports that `codex.cmd` is not recognized, either launch Codex with the full path:
-
-```powershell
-& "C:\Users\temp123\AppData\Roaming\npm\codex.cmd" -m gpt-5.6-sol
-```
-
-or add the npm global directory for the current session:
+If `codex` is not on PATH in a new PowerShell session:
 
 ```powershell
 $env:Path += ";C:\Users\temp123\AppData\Roaming\npm"
 codex.cmd --version
 ```
 
-After the LAB is validated, the npm directory can be added permanently to the user PATH. Prefer `codex.cmd` on Windows while diagnosing to avoid PowerShell execution-policy issues with `codex.ps1`.
+## Clone/update Blender MCP LAB
 
-## Clone Blender MCP LAB
+If not cloned:
 
 ```powershell
 cd $HOME\Documents
 git clone --branch lab/astra-sept-2026 --single-branch https://github.com/Juanmaes83/blender-mcp.git blender-mcp-astra-lab
 cd blender-mcp-astra-lab
+```
+
+If already cloned:
+
+```powershell
+cd $HOME\Documents\blender-mcp-astra-lab
+git fetch origin
+git checkout lab/astra-sept-2026
+git pull --ff-only origin lab/astra-sept-2026
 ```
 
 ## Install/update Blender addon
@@ -73,8 +75,6 @@ $env:BLENDER_MCP_SAFE_MODE="1"
 
 ## Register MCP in Codex
 
-If `codex` is not on PATH, use the full `codex.cmd` path shown above for these commands too.
-
 ```powershell
 codex mcp add blender-astra-lab --env BLENDER_MCP_SAFE_MODE=1 -- uv --directory "$HOME\Documents\blender-mcp-astra-lab" run blender-mcp
 ```
@@ -85,23 +85,78 @@ Check:
 codex mcp list
 ```
 
-## Launch with current available model
+The Blender MCP server must appear healthy before mutation tests.
+
+## Launch Astra inside the LAB
+
+Open PowerShell in the orchestration repo:
 
 ```powershell
-codex -m gpt-5.6-sol
+cd $HOME\Documents\ChatGPT\lab-astra-sept-2026
+codex -m gpt-6-astra
 ```
 
-Inside Codex, inspect MCP status and run the first read-only test:
+Confirm the session header reports:
 
 ```text
-Inspect the currently open Blender scene. Do not modify anything. Report scene objects, then capture a viewport screenshot and verify what you see.
+model: gpt-6-astra
 ```
 
-If that passes, run one bounded mutation:
+## Gate 1A — Read only
+
+Inside Codex/Astra:
 
 ```text
-Create one cube exactly 2m x 2m x 2m named LAB_TEST_CUBE. Do not modify any other object. Inspect the scene, capture a screenshot, verify the cube and dimensions, and report exact tool success/failure.
+Read AGENTS.md and docs/07-BLENDER-CODEX-SETUP.md first.
+Use the configured Blender MCP server.
+Inspect the currently open Blender scene. Do not modify anything.
+Report all scene objects and their transforms/dimensions when available.
+Capture one viewport screenshot.
+Verify that the textual scene report matches the screenshot.
+Save no destructive changes.
+Report exact MCP/tool success or failure.
 ```
+
+PASS requires:
+- MCP call succeeds;
+- scene can be inspected;
+- viewport capture succeeds;
+- report and screenshot are coherent.
+
+## Gate 1B — One bounded mutation
+
+Only after Gate 1A passes:
+
+```text
+Create exactly one cube named LAB_TEST_CUBE with dimensions exactly 2m x 2m x 2m.
+Do not modify any pre-existing object.
+After creation, inspect LAB_TEST_CUBE and verify its dimensions/transforms.
+Capture a new viewport screenshot showing the cube.
+Compare the new state with the previous read-only capture.
+If the dimensions or result are wrong, correct only LAB_TEST_CUBE and recapture.
+Report exact success/failure and evidence paths.
+```
+
+PASS requires:
+- only the bounded object is introduced/changed;
+- dimensions are verified as 2 × 2 × 2 m;
+- second capture proves the change;
+- no unrelated objects were modified.
+
+## Gate 1 evidence
+
+Record evidence in:
+
+```text
+evidence/gate-1/
+```
+
+Minimum record:
+- `00-scene-before.png`
+- `01-scene-after.png`
+- `gate-1-result.md`
+
+Do not commit a `.blend` file containing secrets/private source material without explicit review.
 
 ## Gate
 
@@ -117,6 +172,6 @@ READ SCENE
 
 all succeed reliably.
 
-## Astra later
+## Model rule
 
-When access is actually enabled, replace only the model selection and rerun the same health checks. Do not rebuild the MCP stack merely because the model changes.
+Astra is the current execution model, but the workflow remains model-swappable. A later model change must not require rebuilding the MCP/Blender stack.

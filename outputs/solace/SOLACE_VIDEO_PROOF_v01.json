@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_TECHNICAL_FIRST_PROOF",
+  "human_visual_review": "PENDING",
+  "source_blend": "outputs/solace/SOLACE_BLOCKOUT_v04.blend",
+  "source_reference": "references/solace/HRUOGWHaMAATXEa.jpg",
+  "blend": "outputs/solace/SOLACE_VIDEO_PROOF_v01.blend",
+  "mp4": "outputs/solace/SOLACE_VIDEO_PROOF_v01.mp4",
+  "renderer": "Blender 5.2.1 LTS EEVEE, 16 samples",
+  "codec": "H.264, yuv420p, faststart",
+  "duration_seconds": 12,
+  "resolution": [1920, 1080],
+  "fps": 24,
+  "frames": 288,
+  "mp4_bytes": 7328983,
+  "full_video_decode": "PASS_FFMPEG_EXIT_0",
+  "original_v04_unchanged": true,
+  "limitations": [
+    "No source walkthrough video or interior references were available in the repository; motion and finishes are estimated from the supplied floorplan.",
+    "Fast Eevee proof with visible sampling noise and simplified lighting/glass.",
+    "Only the social slice is refined; remaining property stays blockout quality.",
+    "No audio; no claim of visual matching or visual PASS."
+  ]
+}

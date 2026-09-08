@@ -1,0 +1,1 @@
+{"name":"solace-lab-review","private":true,"version":"1.0.0","type":"module","scripts":{"build":"node review/build.mjs","serve":"http-server dist -p 4173 -c-1"},"dependencies":{"@google/model-viewer":"4.3.1"},"devDependencies":{"http-server":"14.1.1"}}

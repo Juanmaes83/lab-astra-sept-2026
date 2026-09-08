@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "file": "SOLACE_BLOCKOUT_v01.glb",
+  "size_bytes": 185324,
+  "glb_version": 2,
+  "nodes": 137,
+  "meshes": 135,
+  "cameras": 2,
+  "all_manifest_names_present": true,
+  "unrelated_gate1_nodes": false,
+  "external_buffer_dependencies": false,
+  "method": "GLB header/chunk and semantic JSON inspection; not an independent rendered reimport"
+}

@@ -1,0 +1,15 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Code executed successfully: Info: Guardado como \"SOLACE_VIDEO_PROOF_v01.blend\"\nInfo: Guardado como \"SOLACE_VIDEO_PROOF_v01.blend\"\n{\"production\": \"ready\", \"renderer\": \"BLENDER_EEVEE\", \"frames\": 288, \"fps\": 24, \"resolution\": [1920, 1080], \"objects\": 241}\n",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Code executed successfully: Info: Guardado como \"SOLACE_VIDEO_PROOF_v01.blend\"\nInfo: Guardado como \"SOLACE_VIDEO_PROOF_v01.blend\"\n{\"production\": \"ready\", \"renderer\": \"BLENDER_EEVEE\", \"frames\": 288, \"fps\": 24, \"resolution\": [1920, 1080], \"objects\": 241}\n"
+  },
+  "isError": false
+}

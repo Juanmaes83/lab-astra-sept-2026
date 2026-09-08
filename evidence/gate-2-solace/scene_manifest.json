@@ -1,0 +1,4956 @@
+{
+  "project": "SOLACE — THE GARDEN HOUSE / CONCEPT 01",
+  "scene": "SOLACE_GATE_2",
+  "blender_version": "5.2.1 LTS",
+  "source": "references/solace/HRUOGWHaMAATXEa.jpg",
+  "technical_gate_2_candidate": "PASS",
+  "human_review": "PENDING",
+  "units": {
+    "system": "METRIC",
+    "scale_length": 1.0
+  },
+  "blend": "outputs/solace/SOLACE_BLOCKOUT_v04.blend",
+  "export": "evidence/gate-2-solace/SOLACE_BLOCKOUT_v01.glb",
+  "object_count": 137,
+  "objects": [
+    {
+      "semantic_name": "SOLACE_SITE",
+      "type": "MESH",
+      "role": "estimated_site",
+      "transform": {
+        "position_m": [
+          13.261946678161621,
+          4.321070194244385,
+          -0.30000001192092896
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          33.941593170166016,
+          31.61203956604004,
+          0.20000000298023224
+        ]
+      },
+      "dimensions_m": [
+        33.941593170166016,
+        31.61203956604004,
+        0.20000000298023224
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SOLACE_HOUSE",
+      "type": "MESH",
+      "role": "footprint_reference_below_grade",
+      "transform": {
+        "position_m": [
+          12.699999809265137,
+          8.5,
+          -0.20999999344348907
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          25.399999618530273,
+          17.0,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        25.399999618530273,
+        17.0,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "VERIFIED_FROM_SOURCE",
+        "y": "VERIFIED_FROM_SOURCE",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "high_annotation_only",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_WEST_WING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          3.203097343444824,
+          8.5,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          6.406194686889648,
+          17.0,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        6.406194686889648,
+        17.0,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_EAST_WING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          22.253097534179688,
+          8.5,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          6.293805122375488,
+          17.0,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        6.293805122375488,
+        17.0,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_LIVING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          8.682079315185547,
+          13.9581937789917,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.551769733428955,
+          6.083611965179443,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        4.551769733428955,
+        6.083611965179443,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_DINING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          12.840486526489258,
+          13.9581937789917,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.7650442123413086,
+          6.083611965179443,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        3.7650442123413086,
+        6.083611965179443,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_KITCHEN",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          16.914602279663086,
+          13.9581937789917,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.383185863494873,
+          6.083611965179443,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        4.383185863494873,
+        6.083611965179443,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_ENTRY",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          8.850664138793945,
+          18.33612060546875,
+          -0.07999999821186066
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.978318691253662,
+          2.672240734100342,
+          0.1599999964237213
+        ]
+      },
+      "dimensions_m": [
+        2.978318691253662,
+        2.672240734100342,
+        0.1599999964237213
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PLANTED_COURTYARD",
+      "type": "MESH",
+      "role": "open_air_courtyard_ground",
+      "transform": {
+        "position_m": [
+          12.756195068359375,
+          5.458193778991699,
+          -0.07500000298023224
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          12.399999618530273,
+          10.800000190734863,
+          0.05999999865889549
+        ]
+      },
+      "dimensions_m": [
+        12.399999618530273,
+        10.800000190734863,
+        0.05999999865889549
+      ],
+      "dimension_classification": {
+        "x": "VERIFIED_FROM_SOURCE",
+        "y": "VERIFIED_FROM_SOURCE",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "high_annotation_only",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_COVERED_OUTDOOR_DINING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          13.542920112609863,
+          9.125417709350586,
+          0.014999999664723873
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          5.1699113845825195,
+          3.581939697265625,
+          0.03999999910593033
+        ]
+      },
+      "dimensions_m": [
+        5.1699113845825195,
+        3.581939697265625,
+        0.03999999910593033
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_OPEN_LAWN",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          0.7305309772491455,
+          -6.0551838874816895,
+          -0.17000000178813934
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          8.878761291503906,
+          10.63210678100586,
+          0.07999999821186066
+        ]
+      },
+      "dimensions_m": [
+        8.878761291503906,
+        10.63210678100586,
+        0.07999999821186066
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PRIVATE_GARDEN",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          23.23650360107422,
+          -2.1036789417266846,
+          -0.17000000178813934
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          7.811061859130859,
+          3.866220712661743,
+          0.07999999821186066
+        ]
+      },
+      "dimensions_m": [
+        7.811061859130859,
+        3.866220712661743,
+        0.07999999821186066
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_SUN_TERRACE",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          12.615708351135254,
+          -4.946488380432129,
+          -0.14000000059604645
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          13.093362808227539,
+          9.551839828491211,
+          0.09000000357627869
+        ]
+      },
+      "dimensions_m": [
+        13.093362808227539,
+        9.551839828491211,
+        0.09000000357627869
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "POOL_LAP",
+      "type": "MESH",
+      "role": "lap_pool_water_blockout",
+      "transform": {
+        "position_m": [
+          12.531415939331055,
+          -6.0267558097839355,
+          -0.02500000037252903
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          10.0,
+          3.5,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        10.0,
+        3.5,
+        0.15000000596046448
+      ],
+      "dimension_classification": {
+        "x": "VERIFIED_FROM_SOURCE",
+        "y": "VERIFIED_FROM_SOURCE",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "high_annotation_only",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "CAMERA_TOP_REVIEW",
+      "type": "CAMERA",
+      "role": "fixed_north_up_review_camera",
+      "transform": {
+        "position_m": [
+          13.261946678161621,
+          4.377926349639893,
+          48.0
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": 36.0
+    },
+    {
+      "semantic_name": "CAMERA_PERSPECTIVE_REVIEW",
+      "type": "CAMERA",
+      "role": "fixed_perspective_review_camera",
+      "transform": {
+        "position_m": [
+          40.0,
+          -34.0,
+          36.0
+        ],
+        "rotation_euler_radians": [
+          0.9273994565010071,
+          -1.8820381697537414e-08,
+          0.6226708292961121
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": 43.0
+    },
+    {
+      "semantic_name": "SPACE_OFFICE",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          14.64046859741211,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495575428009033,
+          4.491638660430908,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.495575428009033,
+        4.491638660430908,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_FAMILY_BATH",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          10.575250625610352,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495575428009033,
+          3.638796091079712,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.495575428009033,
+        3.638796091079712,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_BEDROOM_02",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          6.538461685180664,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495575428009033,
+          4.4347825050354,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.495575428009033,
+        4.4347825050354,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_BEDROOM_03",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          2.2173912525177,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495575428009033,
+          4.207357883453369,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.495575428009033,
+        4.207357883453369,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_WEST_GALLERY",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          5.450884819030762,
+          8.5,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.6858407258987427,
+          16.77257537841797,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        1.6858407258987427,
+        16.77257537841797,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PANTRY",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          20.48296546936035,
+          15.692307472229004,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.528761148452759,
+          2.3879599571228027,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        2.528761148452759,
+        2.3879599571228027,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_LAUNDRY",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          23.51747703552246,
+          15.749163627624512,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.5402655601501465,
+          2.274247407913208,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        3.5402655601501465,
+        2.274247407913208,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_GUEST_WC",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          21.466371536254883,
+          12.138795852661133,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.0230088233947754,
+          2.2173912525177,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        2.0230088233947754,
+        2.2173912525177,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PLANT_STORE",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          23.88274383544922,
+          12.138795852661133,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.809734582901001,
+          2.2173912525177,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        2.809734582901001,
+        2.2173912525177,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PRIMARY_BATH",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          22.927433013916016,
+          9.068561553955078,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.720354080200195,
+          3.923076868057251,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.720354080200195,
+        3.923076868057251,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_DRESSING",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          22.927433013916016,
+          5.714046955108643,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.720354080200195,
+          2.7859532833099365,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        4.720354080200195,
+        2.7859532833099365,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_PRIMARY_BEDROOM",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          22.253097534179688,
+          2.2173912525177,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          6.069026470184326,
+          4.207357883453369,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        6.069026470184326,
+        4.207357883453369,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_EAST_GALLERY",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          19.892919540405273,
+          7.6755852699279785,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.3486725091934204,
+          6.7090301513671875,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        1.3486725091934204,
+        6.7090301513671875,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "SPACE_SERVICE_PASSAGE",
+      "type": "MESH",
+      "role": "space_floor",
+      "transform": {
+        "position_m": [
+          22.253097534179688,
+          13.872909545898438,
+          0.012000000104308128
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          6.069026470184326,
+          1.2508361339569092,
+          0.019999999552965164
+        ]
+      },
+      "dimensions_m": [
+        6.069026470184326,
+        1.2508361339569092,
+        0.019999999552965164
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_NORTH_WEST",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          3.7369470596313477,
+          16.886287689208984,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          7.249114990234375,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        7.249114990234375,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_ENTRY_WEST",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          7.361504554748535,
+          18.279264450073242,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.7859535217285156,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.7859535217285156,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_ENTRY_EAST",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          10.339822769165039,
+          18.279264450073242,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.7859535217285156,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.7859535217285156,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_ENTRY_NW",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          7.614380836486816,
+          19.6722412109375,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5057520866394043,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5057520866394043,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_ENTRY_NE",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          9.777875900268555,
+          19.6722412109375,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.1238937377929688,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.1238937377929688,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_NORTH_SOCIAL_W",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          10.676990509033203,
+          16.886287689208984,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.6743364334106445,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.6743364334106445,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_NORTH_SOCIAL_E",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          18.010398864746094,
+          16.886287689208984,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          7.473894119262695,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        7.473894119262695,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_NORTH_LAUNDRY",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          23.517478942871094,
+          16.886287689208984,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.5402660369873047,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        3.5402660369873047,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_OFFICE_N",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          16.5167236328125,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.7391300201416016,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7391300201416016,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_OFFICE_S",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          11.797658920288086,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          3.1270904541015625,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        3.1270904541015625,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_BATH_S",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          8.158863067626953,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.9899663925170898,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.9899663925170898,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_BED02_S",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          4.122073650360107,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.1036789417266846,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.1036789417266846,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_BED03_S",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          0.4832775890827179,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.739130437374115,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.739130437374115,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOUTH_WEST_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          0.4776548743247986,
+          0.113712377846241,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.7305309772491455,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7305309772491455,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOUTH_WEST_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.973229885101318,
+          0.113712377846241,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.6411502361297607,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.6411502361297607,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_NORTH",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          16.45986557006836,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.8528423309326172,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.8528423309326172,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_SERVICE_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          14.128763198852539,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.7625417709350586,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.7625417709350586,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_SERVICE_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          12.110367774963379,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.2742481231689453,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.2742481231689453,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_BATH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          10.660534858703613,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.6254177093505859,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.6254177093505859,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_BATH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          6.481605529785156,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          4.321070194244385,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.321070194244385,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_PRIMARY_N",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          3.923076868057251,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.7959866523742676,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7959866523742676,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_EAST_PRIMARY_S",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          0.5401337742805481,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.8528428077697754,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.8528428077697754,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOUTH_PRIMARY_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.640045166015625,
+          0.113712377846241,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.8429203033447266,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.8429203033447266,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOUTH_PRIMARY_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          24.781858444213867,
+          0.113712377846241,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.011505126953125,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.011505126953125,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_OFFICE_BATH",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          12.394648551940918,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495574951171875,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.495574951171875,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_BATH_BED02",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          8.755852699279785,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495574951171875,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.495574951171875,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_BED02_BED03",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          2.3601770401000977,
+          4.321070194244385,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.495574951171875,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.495574951171875,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_ROOM_EDGE_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          16.48829460144043,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.7959861755371094,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7959861755371094,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_ROOM_EDGE_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          12.536788940429688,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          4.719063758850098,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.719063758850098,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_ROOM_EDGE_C",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          8.443143844604492,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1939797401428223,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.1939797401428223,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_ROOM_EDGE_D",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          5.145484924316406,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          3.1270904541015625,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        3.1270904541015625,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WEST_ROOM_EDGE_E",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          1.279264211654663,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.331103801727295,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.331103801727295,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_WEST_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.406194686889648,
+          16.602006912231445,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.5685615539550781,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5685615539550781,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_WEST_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.406194686889648,
+          12.650501251220703,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          4.605351448059082,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.605351448059082,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_WEST_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.293805122375488,
+          8.130434036254883,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.933110237121582,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.933110237121582,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_WEST_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.293805122375488,
+          3.0418059825897217,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          4.150501728057861,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.150501728057861,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_WEST_C",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.293805122375488,
+          0.2274247407913208,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.2274247407913208,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.2274247407913208,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_SOUTH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          6.65907096862793,
+          10.916387557983398,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5057520866394043,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5057520866394043,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_SOUTH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          10.986061096191406,
+          10.916387557983398,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.39336299896240234,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.39336299896240234,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_SOUTH_C",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          18.85331916809082,
+          10.916387557983398,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5057525634765625,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5057525634765625,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_EAST_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          16.147157669067383,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.4782609939575195,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.4782609939575195,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_EAST_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          13.361204147338867,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.8193979263305664,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.8193979263305664,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SOCIAL_EAST_C",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          10.745819091796875,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.6822748184204102,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.6822748184204102,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_EAST_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          8.18729019165039,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.274247169494629,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.274247169494629,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_EAST_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          4.207357883453369,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.364548683166504,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.364548683166504,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_COURTYARD_EAST_C",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          0.5969899892807007,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.9665551781654358,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.9665551781654358,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_PANTRY_LAUNDRY",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          21.747344970703125,
+          15.749164581298828,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.274247169494629,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.274247169494629,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_PANTRY_SOUTH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          19.583850860595703,
+          14.49832820892334,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.7305316925048828,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7305316925048828,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_PANTRY_SOUTH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          21.438274383544922,
+          14.49832820892334,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.6181411743164062,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.6181411743164062,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_LAUNDRY_SOUTH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.11260986328125,
+          14.612040519714355,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.7305316925048828,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.7305316925048828,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_LAUNDRY_SOUTH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          24.472787857055664,
+          14.612040519714355,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.6296463012695312,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.6296463012695312,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WC_NORTH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.679645538330078,
+          13.247491836547852,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.4495582580566406,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.4495582580566406,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WC_NORTH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.196903228759766,
+          13.247491836547852,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5619468688964844,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5619468688964844,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_STORE_NORTH_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.75885009765625,
+          13.247491836547852,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.5619468688964844,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5619468688964844,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_STORE_NORTH_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          24.753761291503906,
+          13.247491836547852,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0676994323730469,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.0676994323730469,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WC_WEST",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.454866409301758,
+          12.138795852661133,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.2173919677734375,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.2173919677734375,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_WC_STORE",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.477876663208008,
+          12.138795852661133,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.2173919677734375,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        2.2173919677734375,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_SERVICE_SUITE",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.871238708496094,
+          11.030099868774414,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.832744598388672,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.832744598388672,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_BATH_GALLERY_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          10.461538314819336,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371231079101562,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.1371231079101562,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_BATH_GALLERY_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          7.90300989151001,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.5919733047485352,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.5919733047485352,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_BATH_DRESSING",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.927433013916016,
+          7.107023239135742,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.720354080200195,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.720354080200195,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_DRESSING_GALLERY_A",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          6.822742462158203,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          0.5685615539550781,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.5685615539550781,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_DRESSING_GALLERY_B",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          4.861204147338867,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.0802674293518066,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        1.0802674293518066,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WALL_DRESSING_PRIMARY",
+      "type": "MESH",
+      "role": "wall",
+      "transform": {
+        "position_m": [
+          22.927433013916016,
+          4.321070194244385,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.720354080200195,
+          0.2199999988079071,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        4.720354080200195,
+        0.2199999988079071,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_ENTRY",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          8.541592597961426,
+          19.6722412109375,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.3486723899841309,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.3486723899841309,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_OFFICE",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          15.493310928344727,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1939802169799805,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1939802169799805,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_FAMILY_BATH",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          9.608695983886719,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371240615844727,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1371240615844727,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_BEDROOM_02",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          7.277591705322266,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371235847473145,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1371235847473145,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_BEDROOM_03",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          4.607964515686035,
+          3.0133779048919678,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371235847473145,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1371235847473145,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_WEST_SOCIAL",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          6.406194686889648,
+          15.635452270507812,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.364548683166504,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.364548683166504,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_WEST_COURTYARD",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          6.293805122375488,
+          9.722408294677734,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.2508363723754883,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.2508363723754883,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_KITCHEN_SERVICE",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          14.83946418762207,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371240615844727,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1371240615844727,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_KITCHEN_GALLERY",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          11.769230842590332,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.3645477294921875,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.3645477294921875,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_EAST_COURTYARD",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          9.864547729492188,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.0802679061889648,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.0802679061889648,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_PANTRY",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          20.539159774780273,
+          14.49832820892334,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.1800880432128906,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1800880432128906,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_LAUNDRY",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          23.067920684814453,
+          14.612040519714355,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.1800880432128906,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1800880432128906,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_LAUNDRY_EXTERIOR",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          15.521739959716797,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.023411750793457,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.023411750793457,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_GUEST_WC",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          21.41017723083496,
+          13.247491836547852,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.011505126953125,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.011505126953125,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_PLANT_STORE",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          23.629867553710938,
+          13.247491836547852,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.1800880432128906,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1800880432128906,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_PRIMARY_BATH",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          9.29598617553711,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1939802169799805,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1939802169799805,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_DRESSING",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          20.567256927490234,
+          5.969899654388428,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.1371240615844727,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.1371240615844727,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "OPENING_PRIMARY_SUITE",
+      "type": "MESH",
+      "role": "opening_threshold",
+      "transform": {
+        "position_m": [
+          19.892921447753906,
+          4.321070194244385,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.348672866821289,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.348672866821289,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_NORTH_SOCIAL",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          12.643804550170898,
+          16.886287689208984,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.259291648864746,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        3.259291648864746,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_OFFICE",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          14.754180908203125,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.7859535217285156,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.7859535217285156,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_FAMILY_BATH",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          9.693979263305664,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.0802679061889648,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.0802679061889648,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_BEDROOM_02",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          6.168896198272705,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.9899663925170898,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.9899663925170898,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_BEDROOM_03_W",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          0.11238937824964523,
+          1.9615384340286255,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.2173912525177,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.2173912525177,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_BEDROOM_03_S",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          2.2477877140045166,
+          0.113712377846241,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.809734582901001,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.809734582901001,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_LIVING_COURTYARD",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          8.850663185119629,
+          10.916387557983398,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.8774333000183105,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        3.8774333000183105,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_DINING_KITCHEN_COURTYARD",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          14.891592979431152,
+          10.916387557983398,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          7.417699813842773,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        7.417699813842773,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_WEST_GALLERY",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          6.293805122375488,
+          6.140468120574951,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.0468225479125977,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.0468225479125977,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_EAST_GALLERY",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          5.969899654388428,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.1605348587036133,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.1605348587036133,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_PRIMARY_COURTYARD",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          19.1061954498291,
+          2.302675485610962,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.4448161125183105,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.4448161125183105,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_PRIMARY_EAST",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          2.245819330215454,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          2.558528423309326,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        2.558528423309326,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_PRIMARY_SOUTH",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          22.168804168701172,
+          0.113712377846241,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          4.214601516723633,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        4.214601516723633,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "WINDOW_BATH_EAST",
+      "type": "MESH",
+      "role": "glazing_sill",
+      "transform": {
+        "position_m": [
+          25.28761100769043,
+          9.494983673095703,
+          0.03500000014901161
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          1.7056856155395508,
+          0.054999999701976776,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.7056856155395508,
+        0.054999999701976776,
+        0.07000000029802322
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_POST_0",
+      "type": "MESH",
+      "role": "covered_dining_post",
+      "transform": {
+        "position_m": [
+          10.957964897155762,
+          10.802675247192383,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.11999999731779099,
+          0.11999999731779099,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.11999999731779099,
+        0.11999999731779099,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_POST_1",
+      "type": "MESH",
+      "role": "covered_dining_post",
+      "transform": {
+        "position_m": [
+          16.12787628173828,
+          10.802675247192383,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.11999999731779099,
+          0.11999999731779099,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.11999999731779099,
+        0.11999999731779099,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_POST_2",
+      "type": "MESH",
+      "role": "covered_dining_post",
+      "transform": {
+        "position_m": [
+          10.957964897155762,
+          7.334448337554932,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.11999999731779099,
+          0.11999999731779099,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.11999999731779099,
+        0.11999999731779099,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_POST_3",
+      "type": "MESH",
+      "role": "covered_dining_post",
+      "transform": {
+        "position_m": [
+          16.12787628173828,
+          7.334448337554932,
+          1.399999976158142
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.11999999731779099,
+          0.11999999731779099,
+          2.799999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.11999999731779099,
+        0.11999999731779099,
+        2.799999952316284
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_BEAM_0",
+      "type": "MESH",
+      "role": "open_coverage_frame",
+      "transform": {
+        "position_m": [
+          13.54292106628418,
+          10.802675247192383,
+          2.75
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          5.1699113845825195,
+          0.11999999731779099,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        5.1699113845825195,
+        0.11999999731779099,
+        0.15000000596046448
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_BEAM_1",
+      "type": "MESH",
+      "role": "open_coverage_frame",
+      "transform": {
+        "position_m": [
+          13.54292106628418,
+          7.334448337554932,
+          2.75
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          5.1699113845825195,
+          0.11999999731779099,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        5.1699113845825195,
+        0.11999999731779099,
+        0.15000000596046448
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_BEAM_2",
+      "type": "MESH",
+      "role": "open_coverage_frame",
+      "transform": {
+        "position_m": [
+          10.957964897155762,
+          9.068561553955078,
+          2.75
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          3.468226909637451,
+          0.11999999731779099,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        3.468226909637451,
+        0.11999999731779099,
+        0.15000000596046448
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_COVERED_DINING_BEAM_3",
+      "type": "MESH",
+      "role": "open_coverage_frame",
+      "transform": {
+        "position_m": [
+          16.12787628173828,
+          9.068561553955078,
+          2.75
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          -1.5707963705062866
+        ],
+        "scale": [
+          3.468226909637451,
+          0.11999999731779099,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        3.468226909637451,
+        0.11999999731779099,
+        0.15000000596046448
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_LIVING_SOFA_REFERENCE",
+      "type": "MESH",
+      "role": "estimated_function_scale_placeholder",
+      "transform": {
+        "position_m": [
+          8.766371726989746,
+          14.413043022155762,
+          0.3499999940395355
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          3.2592921257019043,
+          0.8528428077697754,
+          0.699999988079071
+        ]
+      },
+      "dimensions_m": [
+        3.2592921257019043,
+        0.8528428077697754,
+        0.699999988079071
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_DINING_TABLE_REFERENCE",
+      "type": "MESH",
+      "role": "estimated_function_scale_placeholder",
+      "transform": {
+        "position_m": [
+          12.587610244750977,
+          14.356186866760254,
+          0.3700000047683716
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0115044116973877,
+          2.4448161125183105,
+          0.7400000095367432
+        ]
+      },
+      "dimensions_m": [
+        1.0115044116973877,
+        2.4448161125183105,
+        0.7400000095367432
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    },
+    {
+      "semantic_name": "HELPER_KITCHEN_ISLAND_REFERENCE",
+      "type": "MESH",
+      "role": "estimated_function_scale_placeholder",
+      "transform": {
+        "position_m": [
+          16.577434539794922,
+          14.157190322875977,
+          0.44999998807907104
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          2.697345018386841,
+          1.2508361339569092,
+          0.8999999761581421
+        ]
+      },
+      "dimensions_m": [
+        2.697345018386841,
+        1.2508361339569092,
+        0.8999999761581421
+      ],
+      "dimension_classification": {
+        "x": "ESTIMATED_FOR_BLOCKOUT",
+        "y": "ESTIMATED_FOR_BLOCKOUT",
+        "z": "ESTIMATED_FOR_BLOCKOUT"
+      },
+      "transform_classification": "ESTIMATED_FOR_BLOCKOUT",
+      "verification_confidence": "medium_visual_blockout",
+      "reference_source": "references/solace/HRUOGWHaMAATXEa.jpg",
+      "camera_ortho_scale": null
+    }
+  ],
+  "limitations": [
+    "Concept drawing, not survey/BIM.",
+    "All room partitions, door/window widths, exterior boundaries and heights estimated.",
+    "Courtyard annotation constrains planted surface; gallery wall clear width remains approximately 12.59 m from image strokes.",
+    "Coverage is an open frame; window sills indicate simplified glazing gaps, not detailed window assemblies.",
+    "Gate 1 scene retained separately in blend, excluded from active-scene GLB."
+  ]
+}

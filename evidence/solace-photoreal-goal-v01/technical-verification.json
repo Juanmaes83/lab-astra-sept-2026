@@ -1,0 +1,26 @@
+{
+    "status":  "TECHNICALLY_VALID_REVIEW_CANDIDATE",
+    "human_visual_review":  "COMPLETED",
+    "human_review_scope":  "ANCHOR_PREFLIGHT",
+    "final_render_authorization":  "APPROVE FINAL RENDER",
+    "frames":  420,
+    "duration_seconds":  14,
+    "fps":  30,
+    "resolution":  [
+                       1920,
+                       1080
+                   ],
+    "codec":  "H264",
+    "audio":  false,
+    "full_decode":  "PASS",
+    "black_frame_check":  "PASS",
+    "renderer":  "Cycles OPTIX",
+    "blender":  "5.2.1 LTS",
+    "blend_bytes":  62018398,
+    "blend_sha256":  "11E830D7D15092E1797812742B761E99F4BEAE5F3258E7B075C7E1BF10F3E42D",
+    "mp4_bytes":  9929912,
+    "mp4_sha256":  "296FEFDF94B34C6FAA78429FE2A1B7266BC6055E7CC8079CD58F956762B1024C",
+    "source":  "references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4",
+    "scene_stage":  "assembly_r12",
+    "visual_approval":  "NOT_CLAIMED"
+}
