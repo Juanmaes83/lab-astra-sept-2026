@@ -9,124 +9,235 @@ Status: ✅ CLOSED — 2026-09-07
 - `gpt-6-astra` launches successfully in Codex CLI.
 - Model-swappable architecture retained.
 
-## Phase 1 — Blender MCP Gate 1
+## Phase 1 — Blender MCP control
 Status: ✅ CLOSED — 2026-09-07
 
 Goal: prove reliable local Astra → Blender control with evidence.
 
+Result: PASS.
+
+Do not repeat unless a regression appears.
+
+## Phase 2 — SOLACE spatial reconstruction proof
+Status: ✅ CLOSED AS TECHNICAL/SPATIAL PROOF
+
 Completed:
-1. `Juanmaes83/blender-mcp` branch `lab/astra-sept-2026` used as source;
-2. Blender 5.2.1 LTS installed;
-3. MCP addon enabled;
-4. Safe Mode enabled;
-5. 69 Safe Mode tests PASS;
-6. Blender MCP registered in Codex as `blender-astra-lab`;
-7. MCP connected on port 9876;
-8. Gate 1A read-only scene inspection PASS;
-9. viewport capture PASS;
-10. Gate 1B bounded mutation PASS;
-11. `LAB_TEST_CUBE` created at `(0,4,0)` with dimensions `2 × 2 × 2 m`;
-12. Cube, Camera and Light remained unchanged;
-13. before/after capture and verification PASS;
-14. no `.blend` file overwritten;
-15. PASS record stored in `evidence/gate-1/gate-1-result.md`.
+- source floorplan/reference setup;
+- recognizable SOLACE blockout;
+- living/dining/kitchen relationships;
+- reviewable `.blend` versions;
+- GLB export / scene evidence;
+- technical visual review.
 
-Completion condition:
+Result:
+
+Astra + Blender can interpret the plan and create a controllable recognizable architectural scene.
+
+This phase did **not** prove premium photorealism.
+
+## Phase 3 — SOLACE video technical proofs
+Status: ✅ COMPLETE AS POC / ❌ NOT ACCEPTED AS FINAL VISUAL QUALITY
+
+Produced:
+
+- `SOLACE_VIDEO_PROOF_v01`;
+- `SOLACE_VIDEO_PROOF_v02`.
+
+What they proved:
+- Blender can produce the continuous route;
+- camera animation can be authored;
+- living/dining/kitchen can be rendered as one video;
+- source video can influence the reconstruction.
+
+What they did not prove:
+- reference-matched camera timing;
+- premium hero assets;
+- premium materials;
+- photoreal glazing/vegetation;
+- premium lighting/atmosphere;
+- final commercial visual quality.
+
+Human verdict: v02 is a technical proof, not an accepted cinematic reconstruction.
+
+## Phase 4 — Strategy pivot: Matt Shumer reference-first workflow
+Status: ✅ ADOPTED — 2026-09-08
+
+Primary guide:
+
+https://somethingbig.ai/3d-worlds
+
+Canonical LAB strategy:
+
+`docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md`
+
+Production loop:
 
 ```text
-READ SCENE
-+ SCREENSHOT
-+ ONE CHANGE
-+ SCREENSHOT
-+ VERIFICATION
-= PASS
+REFERENCE
+→ ASSETS
+→ ASSEMBLY
+→ CRITIQUE
+→ SHIP
 ```
 
-Gate result: **PASS**.
+Operational changes:
 
-## Phase 2 — Gate 2 / Smallest useful real-estate spatial slice
-Status: 🟡 NEXT
+1. use `/goal` for the production benchmark when supported;
+2. make real reference media the authority;
+3. fan out specialized workers;
+4. assign asset-domain ownership;
+5. measure camera against source frames;
+6. keep builder and critic separated;
+7. use blind side-by-side critique where practical;
+8. convert every tell into a concrete work order;
+9. iterate internally until a serious reference-fidelity candidate exists;
+10. reserve final PASS for Juanma + ChatGPT.
 
-Goal: move from infrastructure proof to a reviewable real-estate spatial artifact without jumping directly to a full reconstruction.
+## Phase 5 — SOLACE photoreal cinematic reconstruction
+Status: 🟡 READY — WAITING FOR JUANMA APPROVAL TO EXECUTE
 
-Proposed slice:
-1. start from a clean/versioned Blender scene;
-2. create a bounded architectural composition representing a simple room shell / living-space blockout;
-3. use stable semantic object names;
-4. verify dimensions and adjacency;
-5. capture fixed-view evidence;
-6. perform one correction loop if needed;
-7. save a versioned `.blend` only after review;
-8. export a first candidate GLB;
-9. record scene metadata in a minimal `scene_manifest.json`;
-10. classify result PASS/FAIL before expanding to SOLACE.
+This is the current active production phase.
 
-Completion condition:
+### Human goal
+
+Reconstruct the first continuous SOLACE cinematic shot at premium/reference-grounded quality.
+
+Target:
 
 ```text
-BOUNDED REAL-ESTATE SCENE
-+ DIMENSION CHECK
-+ VISUAL CAPTURE
-+ CORRECTION LOOP
-+ GLB EXPORT
-+ MANIFEST
-= PASS
+approximately 00:00.000 → 00:13.967
+hard cut at approximately 00:14.000
+30 fps
+14.0 s / 420 frames
+Living → Dining → Kitchen
 ```
 
-This phase is intentionally small. It proves that the Astra→Blender loop can create an asset that is relevant to PROJECT-PELU, not just a test cube.
+### Production domains
 
-## Phase 3 — SOLACE architectural benchmark
-Status: ⚪ BLOCKED BY GATE 2
+Preferred specialized workers:
 
-1. upload/reference original SOLACE media;
-2. create source manifest;
-3. create scene manifest v0;
-4. build broad blockout;
-5. validate spatial relationships;
-6. detail living/dining/kitchen;
-7. camera/light/material pass;
-8. visual comparison loop;
-9. render 10–14 second walkthrough;
-10. export accepted GLB + manifests for PROJECT-PELU handoff.
+1. reference/frame analyst;
+2. camera/lens/timing;
+3. architecture/openings;
+4. living hero assets;
+5. dining hero assets;
+6. kitchen hero assets;
+7. materials/surface detail;
+8. glazing/exterior/vegetation;
+9. lighting/atmosphere;
+10. rendering/finishing;
+11. fresh independent critic.
 
-Completion condition: recognizably coherent architectural slice with review evidence and an `ACCEPTED SPATIAL PACKAGE`.
+### Reuse rule
 
-## Phase 4 — PROJECT-PELU handoff proof
-Status: ⚪ NOT STARTED
+Start from the strongest useful existing SOLACE scene, including v02 assets where they accelerate the build.
 
-1. package accepted GLB;
-2. include `source_manifest.json` and `scene_manifest.json`;
-3. include preview/camera metadata;
-4. transfer package to PROJECT-PELU F2 branch;
-5. verify the product consumes it without coupling to Blender;
-6. preserve F1 360 fallback.
+Do not rebuild from zero by default.
 
-Completion condition: one LAB-produced spatial asset loads in PROJECT-PELU while F1 remains intact.
+But previous generated geometry has no authority over the real references.
 
-## Phase 5 — Geospatial proof
+### Camera requirement
+
+Solve the camera from the real video using source-frame anchors around:
+
+```text
+0.0
+2.0
+4.0
+6.0
+8.0
+10.0
+12.0
+13.8 seconds
+```
+
+Do not accept another `manually inferred` path without actual frame comparison.
+
+### Visual-quality requirement
+
+The scene must progress beyond blockout/procedural-placeholder appearance in the hero-visible shot.
+
+A final full render is justified only after camera and visible asset quality survive internal critique.
+
+### Critique loop
+
+```text
+BUILD
+→ RENDER CHECKPOINT
+→ BLIND/FRESH CRITIC
+→ TELLS
+→ WORK ORDERS
+→ RESPONSIBLE WORKER
+↺
+```
+
+The loop is autonomous inside the single human goal. It is not a chain of user-facing micro-gates.
+
+### Ship condition
+
+Ship one serious candidate with:
+
+- versioned final `.blend`;
+- final MP4;
+- correct 14-second / 30-fps timing;
+- materially reference-matched camera progression;
+- hero-visible assets no longer reading as crude primitives;
+- premium-enough materials/lighting/exterior for a meaningful human comparison;
+- concise critic/work-order record;
+- pushed commit;
+- `HUMAN VISUAL REVIEW: PENDING`.
+
+## Phase 6 — Hybrid generative finishing experiment
+Status: ⚪ OPTIONAL / AFTER BLENDER PHOTOREAL GOAL RESULT
+
+Seedance 2.5 or another generative-video finishing layer may be evaluated after the Matt Shumer-style Astra/Blender benchmark produces a controlled candidate.
+
+Purpose:
+- test whether a generative finishing layer can raise photoreal/cinematic quality while preserving Blender-controlled geometry, composition, camera and timing.
+
+Important:
+- this is not currently part of Matt Shumer's cited workflow;
+- do not attribute it to him;
+- do not use it to hide a fundamentally wrong camera or spatial reconstruction.
+
+## Phase 7 — PROJECT-PELU handoff proof
+Status: ⚪ BLOCKED UNTIL HUMAN-ACCEPTED SPATIAL OUTPUT
+
+Only after SOLACE proves a sufficiently strong production package should the LAB hand an accepted asset to PROJECT-PELU.
+
+## Phase 8 — Geospatial proof
 Status: ⚪ DEFERRED
 
-Torrevieja/Altea bounded proof using open/owned geodata. Do not start while architectural F2 gates remain open.
+Torrevieja/Altea bounded proof using open/owned geodata.
 
-## Phase 6 — Hero asset enrichment
+## Phase 9 — Blender → Unreal
 Status: ⚪ DEFERRED
 
-## Phase 7 — Blender → Unreal
-Status: ⛔ BLOCKED
+Matt Shumer's workflow supports choosing Unreal where its ecosystem materially helps large-scale/cinematic requirements, but SOLACE remains a focused Blender benchmark for now.
 
-Only after Blender control, QA and architectural handoff are stable.
+Do not switch engines merely to avoid solving the current shot.
 
-## Phase 8 — Persistence / orchestration upgrades
-Status: ⚪ LATER
+## Anti-loop rule — revised
 
-Rome/persistent capability, remote monitoring, spatial audio, region streaming and multi-agent orchestration only after the core proof.
+The previous question:
 
-## Anti-loop rule
+> What is the smallest real artifact that proves this capability?
 
-At every phase ask:
+was useful for infrastructure proof but became too conservative for the photoreal benchmark.
+
+For production, use instead:
+
+> What is the single human goal, and what autonomous internal iterations are necessary to meet the real reference bar?
+
+Do not create 50 human approval gates.
+
+Do not stop after the first technically valid render either.
+
+The correct pattern is:
 
 ```text
-What is the smallest real artifact that proves this capability?
+ONE HUMAN GOAL
+→ MANY INTERNAL SPECIALIZED ITERATIONS IF NEEDED
+→ ONE SERIOUS REVIEW CANDIDATE
+→ HUMAN DECISION
 ```
-
-Do not spend days polishing infrastructure without reviewable output.
