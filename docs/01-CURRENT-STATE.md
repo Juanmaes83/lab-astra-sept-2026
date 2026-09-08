@@ -138,7 +138,17 @@ Primary objective:
 
 ## Next action
 
-**WAIT FOR JUANMA APPROVAL BEFORE STARTING THE NEW ASTRA PRODUCTION GOAL.**
+**HUMAN ANCHOR PREFLIGHT REQUIRED BEFORE RESUMING THE FINAL RENDER.**
+
+Production has advanced through assembly r12. Best saved scene:
+`outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend` (packed textures, 420 frames / 30 fps / 1080p Cycles settings).
+
+Review source versus current anchors:
+`evidence/solace-photoreal-goal-v01/PREFLIGHT.md`.
+
+The independent critic supports a serious review candidate with disclosed fidelity limits; no human visual PASS is claimed. The newly synchronized ddc9084 policy requires explicit human anchor approval. The corrected full render was stopped after nine saved frames; the previous 420-frame render remains archived locally. No corrected final MP4 has been delivered.
+
+Resume memory: `evidence/runs/2026-09-08-solace-photoreal-r12.md`. Do not rebuild the scene, repeat gates, or restart rendering before the human decision.
 
 The next Astra execution must follow `docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md` and must not be framed as another infrastructure gate or low-quality proof render.
 

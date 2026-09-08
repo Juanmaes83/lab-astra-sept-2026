@@ -1,0 +1,20 @@
+{
+  "blend": "SOLACE_PHOTOREAL_GOAL_v01.blend",
+  "blender": "5.2.1 LTS",
+  "renderer": "CYCLES",
+  "device": "RTX 5070 Ti / OPTIX",
+  "frames": 420,
+  "fps": 30,
+  "duration": 14,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "max_samples": 256,
+  "adaptive_threshold": 0.012,
+  "minimum_samples": 64,
+  "denoising": true,
+  "packed_images": 9,
+  "unpacked_required_images": [],
+  "human_review": "PENDING"
+}
