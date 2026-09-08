@@ -24,15 +24,27 @@
     }
   },
   "anchor_stills": [
-    {"file": "references/solace/stills/SOLACE_TARGET_00000ms.jpg", "timestamp_seconds": 0.0, "source_frame_index": 0, "role": "Exterior/glazing opening composition — library left, sofa center, dining right."},
-    {"file": "references/solace/stills/SOLACE_TARGET_02000ms.jpg", "timestamp_seconds": 2.0, "source_frame_index": 60, "role": "Exterior approach through glazing — preserve mullions/reflections and room depth."},
-    {"file": "references/solace/stills/SOLACE_TARGET_04000ms.jpg", "timestamp_seconds": 4.0, "source_frame_index": 120, "role": "Living approach — sofa/library scale and rear doorway become dominant."},
-    {"file": "references/solace/stills/SOLACE_TARGET_06000ms.jpg", "timestamp_seconds": 6.0, "source_frame_index": 180, "role": "Living hero — sofa fills frame; dining transition not yet advanced."},
-    {"file": "references/solace/stills/SOLACE_TARGET_08000ms.jpg", "timestamp_seconds": 8.0, "source_frame_index": 240, "role": "Dining hero — table/chairs dominant; kitchen begins to enter."},
-    {"file": "references/solace/stills/SOLACE_TARGET_10000ms.jpg", "timestamp_seconds": 10.0, "source_frame_index": 300, "role": "Dining to Kitchen transition — island gains foreground importance."},
-    {"file": "references/solace/stills/SOLACE_TARGET_12000ms.jpg", "timestamp_seconds": 12.0, "source_frame_index": 360, "role": "Kitchen hero — island foreground, rear sink/window, tall units/opening."},
-    {"file": "references/solace/stills/SOLACE_TARGET_13800ms.jpg", "timestamp_seconds": 13.8, "source_frame_index": 414, "role": "Kitchen end frame immediately before the hard cut at approximately 14.0 s."}
+    {"file": "references/solace/stills/SOLACE_TARGET_00000ms.jpg", "timestamp_seconds": 0.0, "source_frame_index": 0, "role": "Exterior/glazing opening composition — library left, sofa center, dining right.", "size_bytes": 188932, "git_blob": "53fd097bbf0a35dc1090bbcbd370c7ae0241089f"},
+    {"file": "references/solace/stills/SOLACE_TARGET_02000ms.jpg", "timestamp_seconds": 2.0, "source_frame_index": 60, "role": "Exterior approach through glazing — preserve mullions/reflections and room depth.", "size_bytes": 201348, "git_blob": "1f9294dd1c283a68d66ad21f14bd64728efb869e"},
+    {"file": "references/solace/stills/SOLACE_TARGET_04000ms.jpg", "timestamp_seconds": 4.0, "source_frame_index": 120, "role": "Living approach — sofa/library scale and rear doorway become dominant.", "size_bytes": 185279, "git_blob": "476069460169a02e3f39949d81e4f0c24aadbd59"},
+    {"file": "references/solace/stills/SOLACE_TARGET_06000ms.jpg", "timestamp_seconds": 6.0, "source_frame_index": 180, "role": "Living hero — sofa fills frame; dining transition not yet advanced.", "size_bytes": 136234, "git_blob": "8c0bd0b41d0f48c479dac70d43b3f876870c4614"},
+    {"file": "references/solace/stills/SOLACE_TARGET_08000ms.jpg", "timestamp_seconds": 8.0, "source_frame_index": 240, "role": "Dining hero — table/chairs dominant; kitchen begins to enter.", "size_bytes": 185268, "git_blob": "6e356d1f61f38d8bf9b2c3d33e794010d7598633"},
+    {"file": "references/solace/stills/SOLACE_TARGET_10000ms.jpg", "timestamp_seconds": 10.0, "source_frame_index": 300, "role": "Dining to Kitchen transition — island gains foreground importance.", "size_bytes": 176993, "git_blob": "e7b049038cc898b01e1bdea1d3bb20f8e375cc32"},
+    {"file": "references/solace/stills/SOLACE_TARGET_12000ms.jpg", "timestamp_seconds": 12.0, "source_frame_index": 360, "role": "Kitchen hero — island foreground, rear sink/window, tall units/opening.", "size_bytes": 169240, "git_blob": "40d7c262d4456b0c0402876c055b641a378b831e"},
+    {"file": "references/solace/stills/SOLACE_TARGET_13800ms.jpg", "timestamp_seconds": 13.8, "source_frame_index": 414, "role": "Kitchen end frame immediately before the hard cut at approximately 14.0 s.", "size_bytes": 146822, "git_blob": "1e4befa9fc42fb1a44b0490a1bed5303b493a7ec"}
   ],
+  "contact_sheet": {
+    "file": "references/solace/stills/SOLACE_TARGET_CONTACT_SHEET.jpg",
+    "size_bytes": 593017,
+    "git_blob": "601b6fe971bdb3083747aa8c79534c78269dd541",
+    "authority": "CONVENIENCE_OVERVIEW_ONLY"
+  },
+  "generation": {
+    "workflow": ".github/workflows/build-solace-reference-stills.yml",
+    "workflow_run_id": 34208133235,
+    "workflow_result": "SUCCESS",
+    "asset_commit": "73d9c3516a25dc3e6a3cc958b15b4d97d651c058"
+  },
   "process_support": {
     "file": "references/solace/video/VIDEO_REFERENCIA_SOLACE_BLENDER_PROCESS.mp4",
     "authority": "PROCESS_SUPPORT_ONLY"
