@@ -138,7 +138,7 @@ Primary objective:
 
 ## Next action
 
-**HUMAN ANCHOR PREFLIGHT REQUIRED BEFORE RESUMING THE FINAL RENDER.**
+**APPROVED FINAL RENDER COMPLETE — MP4 READY FOR PLAYBACK.**
 
 Production has advanced through assembly r12. Best saved scene:
 `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend` (packed textures, 420 frames / 30 fps / 1080p Cycles settings).
@@ -146,9 +146,9 @@ Production has advanced through assembly r12. Best saved scene:
 Review source versus current anchors:
 `evidence/solace-photoreal-goal-v01/PREFLIGHT.md`.
 
-The independent critic supports a serious review candidate with disclosed fidelity limits; no human visual PASS is claimed. The newly synchronized ddc9084 policy requires explicit human anchor approval. The corrected full render was stopped after nine saved frames; the previous 420-frame render remains archived locally. No corrected final MP4 has been delivered.
+Juanma explicitly completed human anchor preflight with `APPROVE FINAL RENDER`. The frozen approved scene was resumed from frame10 without overwriting frames1–9. Corrected final MP4: `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4`,14.000s,420frames,1920×1080,30fps,H264,9,929,912bytes. Cycles GPU/OPTIX render, full decode and black-frame detection succeeded. Blend hash unchanged. Historical renders remain archived locally.
 
-Resume memory: `evidence/runs/2026-09-08-solace-photoreal-r12.md`. Do not rebuild the scene, repeat gates, or restart rendering before the human decision.
+Resume memory: `evidence/runs/2026-09-08-solace-final-render-v01.md`. Technical evidence: `evidence/solace-photoreal-goal-v01/technical-verification.json`. Do not rebuild, rerender, regenerate anchors or reopen critique without a new request. Human preflight is completed; no later human playback verdict or PROJECT-PELU acceptance is invented.
 
 The next Astra execution must follow `docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md` and must not be framed as another infrastructure gate or low-quality proof render.
 

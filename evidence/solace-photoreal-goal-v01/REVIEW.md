@@ -1,6 +1,6 @@
 # SOLACE photoreal goal v01 — review record
 
-HUMAN VISUAL REVIEW: PENDING. No human or benchmark visual PASS is claimed.
+HUMAN VISUAL REVIEW: COMPLETED for anchor preflight by explicit owner approval. Final render and encoding completed; see `technical-verification.json` and the final-render run report. Historical critique below is preserved; no later human playback verdict is claimed.
 
 Authority: `references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4`; first shot 0–13.967s. Floorplan: `references/solace/HRUOGWHaMAATXEa.jpg`. Eight supplied 1080p stills at 0/2/4/6/8/10/12/13.8s; source recording crop x0/y156/w1990/h1120. Previous outputs were implementation history, not visual truth.
 

@@ -1,6 +1,8 @@
 # SOLACE — human anchor preflight
 
-**Decision required: APPROVE FINAL RENDER / ONE CONSOLIDATED CORRECTION REQUIRED / STOP.**
+**APPROVE FINAL RENDER received from Juanma. Human anchor preflight COMPLETED.**
+
+The approved frozen scene has now produced the [final MP4](../../outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4). See [technical verification](technical-verification.json). The comparison below is the preserved approved preview pack, not regenerated evidence.
 
 Current scene: [SOLACE_PHOTOREAL_GOAL_v01.blend](../../outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend), assembly r12. All required textures packed. These are 960×540 / 48-sample Cycles previews, not the final video. [Opening at final resolution](opening-full-resolution.png) is 1920×1080 / up to 256 samples.
 
@@ -19,6 +21,6 @@ The independent critic considers this a serious review candidate, not a source-f
 
 Final frame 420 / 13.967s: ![](anchor_0420.png)
 
-Full render is paused under the new cost gate in `docs/11-ASTRA-RUN-PLAYBOOK.md`, imported at ddc9084. Nine corrected full-resolution frames and the complete superseded r09 sequence remain preserved locally. No corrected final MP4 exists yet.
+Historical pause under the ddc9084 cost gate preserved nine corrected frames and the superseded r09 sequence. After explicit human approval, frames10–420 were completed and the final14-second MP4 encoded and technically verified.
 
-HUMAN VISUAL REVIEW: PENDING.
+HUMAN VISUAL REVIEW: COMPLETED (anchor preflight). No final-video human verdict is claimed.
