@@ -29,9 +29,7 @@ Completed:
 - GLB export / scene evidence;
 - technical visual review.
 
-Result:
-
-Astra + Blender can interpret the plan and create a controllable recognizable architectural scene.
+Result: Astra + Blender can interpret the plan and create a controllable recognizable architectural scene.
 
 This phase did **not** prove premium photorealism.
 
@@ -39,25 +37,10 @@ This phase did **not** prove premium photorealism.
 Status: ✅ COMPLETE AS POC / ❌ NOT ACCEPTED AS FINAL VISUAL QUALITY
 
 Produced:
-
 - `SOLACE_VIDEO_PROOF_v01`;
 - `SOLACE_VIDEO_PROOF_v02`.
 
-What they proved:
-- Blender can produce the continuous route;
-- camera animation can be authored;
-- living/dining/kitchen can be rendered as one video;
-- source video can influence the reconstruction.
-
-What they did not prove:
-- reference-matched camera timing;
-- premium hero assets;
-- premium materials;
-- photoreal glazing/vegetation;
-- premium lighting/atmosphere;
-- final commercial visual quality.
-
-Human verdict: v02 is a technical proof, not an accepted cinematic reconstruction.
+They proved spatial control, camera animation and continuous video generation, but not premium reference fidelity.
 
 ## Phase 4 — Strategy pivot: Matt Shumer reference-first workflow
 Status: ✅ ADOPTED — 2026-09-08
@@ -82,128 +65,96 @@ REFERENCE
 
 Operational changes:
 
-1. use `/goal` for the production benchmark when supported;
+1. use `/goal` for production benchmarks when supported;
 2. make real reference media the authority;
 3. fan out specialized workers;
 4. assign asset-domain ownership;
 5. measure camera against source frames;
 6. keep builder and critic separated;
 7. use blind side-by-side critique where practical;
-8. convert every tell into a concrete work order;
-9. iterate internally until a serious reference-fidelity candidate exists;
-10. reserve final PASS for Juanma + ChatGPT.
+8. convert visual tells into concrete work orders;
+9. consolidate critique/corrections before expensive renders;
+10. reserve final PASS for human review.
 
 ## Phase 5 — SOLACE photoreal cinematic reconstruction
-Status: 🟡 READY — WAITING FOR JUANMA APPROVAL TO EXECUTE
+Status: ✅ HUMAN ACCEPTED / BENCHMARK COMPLETE — 2026-09-08
 
-This is the current active production phase.
-
-### Human goal
-
-Reconstruct the first continuous SOLACE cinematic shot at premium/reference-grounded quality.
-
-Target:
+### Accepted target
 
 ```text
 approximately 00:00.000 → 00:13.967
 hard cut at approximately 00:14.000
 30 fps
 14.0 s / 420 frames
+1920 × 1080
 Living → Dining → Kitchen
 ```
 
-### Production domains
+### Accepted deliverables
 
-Preferred specialized workers:
+- `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.blend`
+- `outputs/solace/SOLACE_PHOTOREAL_GOAL_v01.mp4`
+- delivery commit: `aec9f944ab3a5f7296f040450791d5aedd79f6ed`
+- technical verification: `evidence/solace-photoreal-goal-v01/technical-verification.json`
+- final run report: `evidence/runs/2026-09-08-solace-final-render-v01.md`
+- human acceptance: `evidence/solace-photoreal-goal-v01/HUMAN-ACCEPTANCE.md`
 
-1. reference/frame analyst;
-2. camera/lens/timing;
-3. architecture/openings;
-4. living hero assets;
-5. dining hero assets;
-6. kitchen hero assets;
-7. materials/surface detail;
-8. glazing/exterior/vegetation;
-9. lighting/atmosphere;
-10. rendering/finishing;
-11. fresh independent critic.
+### Result
 
-### Reuse rule
+Juanma reviewed the completed MP4 and approved it as sufficiently improved to close the benchmark and continue advancing the project.
 
-Start from the strongest useful existing SOLACE scene, including v02 assets where they accelerate the build.
+This is a human-accepted reconstructed/design visualization. It does not claim exact source indistinguishability, VERIFIED_REAL status or survey/BIM accuracy.
 
-Do not rebuild from zero by default.
+### Freeze rule
 
-But previous generated geometry has no authority over the real references.
+Do not spend more Astra credits polishing SOLACE v01 by default.
 
-### Camera requirement
+Any future change must:
+- have a new explicit objective;
+- create a new version/goal;
+- preserve accepted v01 untouched.
 
-Solve the camera from the real video using source-frame anchors around:
+### Process proved
 
 ```text
-0.0
-2.0
-4.0
-6.0
-8.0
-10.0
-12.0
-13.8 seconds
+REFERENCES
+→ FIXED ANCHORS
+→ REUSE BEST BASE
+→ SPECIALIZED BUILD
+→ INDEPENDENT CRITIQUE
+→ CONSOLIDATED CORRECTIONS
+→ HUMAN ANCHOR PREFLIGHT
+→ ONE FINAL RENDER
+→ HUMAN PLAYBACK ACCEPTANCE
 ```
-
-Do not accept another `manually inferred` path without actual frame comparison.
-
-### Visual-quality requirement
-
-The scene must progress beyond blockout/procedural-placeholder appearance in the hero-visible shot.
-
-A final full render is justified only after camera and visible asset quality survive internal critique.
-
-### Critique loop
-
-```text
-BUILD
-→ RENDER CHECKPOINT
-→ BLIND/FRESH CRITIC
-→ TELLS
-→ WORK ORDERS
-→ RESPONSIBLE WORKER
-↺
-```
-
-The loop is autonomous inside the single human goal. It is not a chain of user-facing micro-gates.
-
-### Ship condition
-
-Ship one serious candidate with:
-
-- versioned final `.blend`;
-- final MP4;
-- correct 14-second / 30-fps timing;
-- materially reference-matched camera progression;
-- hero-visible assets no longer reading as crude primitives;
-- premium-enough materials/lighting/exterior for a meaningful human comparison;
-- concise critic/work-order record;
-- pushed commit;
-- `HUMAN VISUAL REVIEW: PENDING`.
 
 ## Phase 6 — Hybrid generative finishing experiment
-Status: ⚪ OPTIONAL / AFTER BLENDER PHOTOREAL GOAL RESULT
+Status: ⚪ OPTIONAL / SEPARATE EXPERIMENT
 
-Seedance 2.5 or another generative-video finishing layer may be evaluated after the Matt Shumer-style Astra/Blender benchmark produces a controlled candidate.
+Seedance or another generative-video finishing layer may be evaluated only as a separate version/experiment.
 
 Purpose:
-- test whether a generative finishing layer can raise photoreal/cinematic quality while preserving Blender-controlled geometry, composition, camera and timing.
+- test whether a generative finishing layer can raise cinematic realism while preserving Blender-controlled geometry, composition, camera and timing.
 
 Important:
-- this is not currently part of Matt Shumer's cited workflow;
-- do not attribute it to him;
-- do not use it to hide a fundamentally wrong camera or spatial reconstruction.
+- this is not required to validate SOLACE v01; SOLACE v01 is already accepted;
+- do not attribute this step to Matt Shumer's cited workflow;
+- never overwrite the accepted Blender render.
 
 ## Phase 7 — PROJECT-PELU handoff proof
-Status: ⚪ BLOCKED UNTIL HUMAN-ACCEPTED SPATIAL OUTPUT
+Status: 🟢 UNBLOCKED / READY FOR EXPLICIT HANDOFF DECISION
 
-Only after SOLACE proves a sufficiently strong production package should the LAB hand an accepted asset to PROJECT-PELU.
+SOLACE now satisfies the human-accepted-output prerequisite.
+
+A handoff package may be prepared when explicitly approved. It should preserve:
+- accepted blend/video;
+- provenance;
+- source/reference manifest;
+- truth state;
+- technical metadata;
+- human acceptance record.
+
+Do not perform product integration automatically from this roadmap update.
 
 ## Phase 8 — Geospatial proof
 Status: ⚪ DEFERRED
@@ -213,31 +164,40 @@ Torrevieja/Altea bounded proof using open/owned geodata.
 ## Phase 9 — Blender → Unreal
 Status: ⚪ DEFERRED
 
-Matt Shumer's workflow supports choosing Unreal where its ecosystem materially helps large-scale/cinematic requirements, but SOLACE remains a focused Blender benchmark for now.
+Unreal may be evaluated where its ecosystem materially helps larger-scale/cinematic requirements.
 
-Do not switch engines merely to avoid solving the current shot.
+Do not switch engines merely to avoid solving a reference-grounded production problem.
 
-## Anti-loop rule — revised
+## Persistent learning system
 
-The previous question:
+Every future expensive Astra run must begin from repository memory:
 
-> What is the smallest real artifact that proves this capability?
+- `AGENTS.md`
+- `docs/01-CURRENT-STATE.md`
+- `docs/09-MATT-SHUMER-ASTRA-WORKFLOW.md`
+- `docs/10-SOLACE-LESSONS-AND-COST-EFFICIENCY.md`
+- `docs/11-ASTRA-RUN-PLAYBOOK.md`
+- latest relevant `evidence/runs/*`
+- relevant reference manifest
 
-was useful for infrastructure proof but became too conservative for the photoreal benchmark.
+Every meaningful run must leave a concise run report/resume packet so the next session does not rediscover solved work.
 
-For production, use instead:
+## Anti-loop rule — production
 
-> What is the single human goal, and what autonomous internal iterations are necessary to meet the real reference bar?
-
-Do not create 50 human approval gates.
-
-Do not stop after the first technically valid render either.
-
-The correct pattern is:
+The correct production pattern is:
 
 ```text
 ONE HUMAN GOAL
-→ MANY INTERNAL SPECIALIZED ITERATIONS IF NEEDED
-→ ONE SERIOUS REVIEW CANDIDATE
+→ HIGH-INFORMATION INTERNAL ITERATION
+→ CHEAP ANCHOR PREFLIGHT
+→ ONE HUMAN ECONOMIC GATE
+→ ONE FINAL RENDER
 → HUMAN DECISION
+→ FREEZE ACCEPTED VERSION
 ```
+
+Do not create dozens of human micro-gates.
+
+Do not keep polishing an accepted benchmark because an agent can still find differences.
+
+Accepted outputs are frozen until a new explicit goal justifies a new version.
