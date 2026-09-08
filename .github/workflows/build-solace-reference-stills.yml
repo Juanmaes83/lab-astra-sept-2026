@@ -1,0 +1,88 @@
+name: Build SOLACE reference stills
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/astra-blender-gate-1
+    paths:
+      - .github/workflows/build-solace-reference-stills.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-stills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout benchmark branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/astra-blender-gate-1
+          fetch-depth: 0
+
+      - name: Verify ffmpeg
+        run: ffmpeg -version | head -n 1
+
+      - name: Extract authoritative 16:9 anchor frames
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="references/solace/video/VIDEO_REFERENCIA_SOLACE_CINEMATIC_TARGET.mp4"
+          OUT="references/solace/stills"
+          test -f "$SRC"
+          mkdir -p "$OUT"
+          rm -f "$OUT"/SOLACE_TARGET_*ms.jpg "$OUT"/SOLACE_TARGET_CONTACT_SHEET.jpg
+
+          extract() {
+            local ts="$1"
+            local name="$2"
+            ffmpeg -hide_banner -loglevel error -y \
+              -i "$SRC" -ss "$ts" -frames:v 1 \
+              -vf "crop=1990:1120:0:156,scale=1920:1080:flags=lanczos" \
+              -q:v 2 -pix_fmt yuvj444p "$OUT/$name"
+          }
+
+          extract 0.000  SOLACE_TARGET_00000ms.jpg
+          extract 2.000  SOLACE_TARGET_02000ms.jpg
+          extract 4.000  SOLACE_TARGET_04000ms.jpg
+          extract 6.000  SOLACE_TARGET_06000ms.jpg
+          extract 8.000  SOLACE_TARGET_08000ms.jpg
+          extract 10.000 SOLACE_TARGET_10000ms.jpg
+          extract 12.000 SOLACE_TARGET_12000ms.jpg
+          extract 13.800 SOLACE_TARGET_13800ms.jpg
+
+          ffmpeg -hide_banner -loglevel error -y \
+            -pattern_type glob -framerate 1 -i "$OUT/SOLACE_TARGET_*ms.jpg" \
+            -vf "scale=960:540,tile=2x4:padding=20:margin=20:color=white" \
+            -frames:v 1 -q:v 2 "$OUT/SOLACE_TARGET_CONTACT_SHEET.jpg"
+
+          identify_files=(
+            SOLACE_TARGET_00000ms.jpg
+            SOLACE_TARGET_02000ms.jpg
+            SOLACE_TARGET_04000ms.jpg
+            SOLACE_TARGET_06000ms.jpg
+            SOLACE_TARGET_08000ms.jpg
+            SOLACE_TARGET_10000ms.jpg
+            SOLACE_TARGET_12000ms.jpg
+            SOLACE_TARGET_13800ms.jpg
+            SOLACE_TARGET_CONTACT_SHEET.jpg
+          )
+          for f in "${identify_files[@]}"; do
+            test -s "$OUT/$f"
+            echo "$f $(stat -c%s "$OUT/$f") bytes"
+          done
+
+      - name: Commit generated reference assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add references/solace/stills/*.jpg
+          if git diff --cached --quiet; then
+            echo "Reference stills already up to date."
+            exit 0
+          fi
+          git commit -m "assets: add SOLACE cinematic anchor stills"
+          git push origin HEAD:feat/astra-blender-gate-1
